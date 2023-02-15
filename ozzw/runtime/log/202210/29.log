@@ -1,0 +1,2165 @@
+---------------------------------------------------------------
+[ 2022-10-29T02:16:54+08:00 ] 152.89.196.23 GET 8.129.145.153:443/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession
+[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/500.zjszjs.com/thinkphp/lang//../../../..//////////dev/cmdb/sslvpn_websession.php) is not within the allowed path(s): (/www/wwwroot/500.zjszjs.com/:/tmp/)
+---------------------------------------------------------------
+[ 2022-10-29T15:56:15+08:00 ] 152.89.196.23 GET 8.129.145.153:443/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession
+[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/500.zjszjs.com/thinkphp/lang//../../../..//////////dev/cmdb/sslvpn_websession.php) is not within the allowed path(s): (/www/wwwroot/500.zjszjs.com/:/tmp/)
+---------------------------------------------------------------
+[ 2022-10-29T23:15:24+08:00 ] 222.247.204.72 GET 500.zjszjs.com/about.html
+[ error ] [0]类的属性不存在:addons\cms\model\Channel->lmbj
+---------------------------------------------------------------
+[ 2022-10-29T23:15:26+08:00 ] 222.247.204.72 GET 500.zjszjs.com/All.html
+[ error ] [0]类的属性不存在:addons\cms\model\Channel->lmbj
+---------------------------------------------------------------
+[ 2022-10-29T23:15:29+08:00 ] 222.247.204.72 GET 500.zjszjs.com/product.html
+[ error ] [0]类的属性不存在:addons\cms\model\Channel->lmbj
+---------------------------------------------------------------
+[ 2022-10-29T23:15:45+08:00 ] 222.247.204.72 GET 500.zjszjs.com/about.html
+[ error ] [0]类的属性不存在:addons\cms\model\Channel->lmbj
+---------------------------------------------------------------
+[ 2022-10-29T23:15:47+08:00 ] 222.247.204.72 GET 500.zjszjs.com/Page.html
+[ error ] [0]类的属性不存在:addons\cms\model\Channel->lmbj
+---------------------------------------------------------------
+[ 2022-10-29T23:16:24+08:00 ] 222.247.204.72 GET 500.zjszjs.com/
+[运行时间：0.123231s] [吞吐率：8.11req/s] [内存消耗：4,658.87kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002404s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002422s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000214s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/500.zjszjs.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001548s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/addons/cms/view/default1/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000124s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:26+08:00 ] 222.247.204.72 GET 500.zjszjs.com/about.html
+[运行时间：0.081796s] [吞吐率：12.23req/s] [内存消耗：4,657.58kb] [文件加载：154]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002611s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002630s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000244s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'channel',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://500.zjszjs.com/',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'about',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/500.zjszjs.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001291s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/addons/cms/view/default1/channel_about.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__FILTERLIST__',
+  5 => '__ORDERLIST__',
+  6 => '__PAGELIST__',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]类的属性不存在:addons\cms\model\Channel->lmbj[/www/wwwroot/500.zjszjs.com/thinkphp/library/think/Model.php:626]
+---------------------------------------------------------------
+[ 2022-10-29T23:16:32+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php
+[运行时间：0.086799s] [吞吐率：11.52req/s] [内存消耗：4,571.45kb] [文件加载：152]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002369s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002386s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000205s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'none',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001049s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/public/../application/admin/view/index/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000033s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000125s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:32+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/archives?addtabs=1
+[运行时间：0.068285s] [吞吐率：14.64req/s] [内存消耗：4,832.99kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002353s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002370s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000217s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001040s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Archives.php ]
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/public/../application/admin/view/cms/archives/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'channelOptions',
+  6 => 'secondChannelOptions',
+  7 => 'flagList',
+  8 => 'statusList',
+  9 => 'modelList',
+  10 => 'specialList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000033s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000127s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:32+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.archives&lang=zh-cn&v=1667056592&v=1667056592
+[运行时间：0.050120s] [吞吐率：19.95req/s] [内存消耗：3,445.00kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002402s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002418s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000262s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'script',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.archives',
+  'lang' => 'zh-cn',
+  'v' => '1667056592',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001457s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000128s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:32+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/ajax/lang?callback=define&controllername=index&lang=zh-cn&v=1667056592&v=1667056592
+[运行时间：0.071702s] [吞吐率：13.95req/s] [内存消耗：3,446.41kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002662s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002680s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000207s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'script',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'lang' => 'zh-cn',
+  'v' => '1667056592',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001466s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000142s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:33+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1667056614505
+[运行时间：0.069549s] [吞吐率：14.38req/s] [内存消耗：4,863.69kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002497s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002514s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000208s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => '500.zjszjs.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh DESC,id DESC',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1667056614505',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001107s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Archives.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000133s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:35+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/channel?addtabs=1
+[运行时间：0.063861s] [吞吐率：15.66req/s] [内存消耗：4,698.48kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002471s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002488s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000206s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.channel',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001133s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/channel.php
+[ info ] [ RUN ] app\admin\controller\cms\Channel->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Channel.php ]
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/public/../application/admin/view/cms/channel/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'modelList',
+  6 => 'channelList',
+  7 => 'typeList',
+  8 => 'statusList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000026s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000133s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:35+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.channel&lang=zh-cn&v=1667056595&v=1667056595
+[运行时间：0.034839s] [吞吐率：28.70req/s] [内存消耗：3,443.80kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002466s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002484s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000205s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'script',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.channel',
+  'lang' => 'zh-cn',
+  'v' => '1667056595',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001415s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/channel.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000134s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:36+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/channel/index?sort=weigh&order=desc&_=1667056617211
+[运行时间：0.058760s] [吞吐率：17.02req/s] [内存消耗：4,697.63kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002366s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002384s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000206s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => '500.zjszjs.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  '_' => '1667056617211',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001063s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/channel.php
+[ info ] [ RUN ] app\admin\controller\cms\Channel->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Channel.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000145s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:36+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms.fields/index/source/channel/source_id/0?dialog=1
+[运行时间：0.049342s] [吞吐率：20.27req/s] [内存消耗：4,349.21kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002329s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002346s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000207s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'source' => 'channel',
+  'source_id' => '0',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001033s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/fields.php
+[ info ] [ RUN ] app\admin\controller\cms\Fields->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Fields.php ]
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/public/../application/admin/view/cms/fields/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'typeList',
+  7 => 'regexList',
+  8 => 'source',
+  9 => 'source_id',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000029s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000132s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:37+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.fields&lang=zh-cn&v=1667056596&v=1667056596
+[运行时间：0.034492s] [吞吐率：28.99req/s] [内存消耗：3,444.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002412s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002431s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000218s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'script',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.fields',
+  'lang' => 'zh-cn',
+  'v' => '1667056596',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001431s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/fields.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000123s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:37+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/fields/index/source/channel/source_id/0?sort=weigh&order=desc&_=1667056618839
+[运行时间：0.057552s] [吞吐率：17.38req/s] [内存消耗：4,522.52kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002417s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002436s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000208s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => '500.zjszjs.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  '_' => '1667056618839',
+  'source' => 'channel',
+  'source_id' => '0',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001081s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/fields.php
+[ info ] [ RUN ] app\admin\controller\cms\Fields->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000144s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:37+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/fields/add/source/channel/source_id/0?dialog=1
+[运行时间：0.055994s] [吞吐率：17.86req/s] [内存消耗：4,369.16kb] [文件加载：140]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002414s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002432s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000209s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'source' => 'channel',
+  'source_id' => '0',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001049s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/fields.php
+[ info ] [ RUN ] app\admin\controller\cms\Fields->add[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Fields.php ]
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/public/../application/admin/view/cms/fields/add.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'statusList',
+  6 => 'typeList',
+  7 => 'regexList',
+  8 => 'source',
+  9 => 'source_id',
+  10 => 'tableList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000031s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000137s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:38+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.fields&lang=zh-cn&v=1667056597&v=1667056597
+[运行时间：0.034277s] [吞吐率：29.17req/s] [内存消耗：3,444.55kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002372s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002391s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000211s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'script',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.fields',
+  'lang' => 'zh-cn',
+  'v' => '1667056597',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001355s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/fields.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000127s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:45+08:00 ] 222.247.204.72 POST 500.zjszjs.com/cms.php/cms/fields/add/source/channel/source_id/0?dialog=1
+[运行时间：0.130604s] [吞吐率：7.66req/s] [内存消耗：4,619.09kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002366s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002383s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000214s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.fields',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://500.zjszjs.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '576',
+  'host' => '500.zjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'dialog' => '1',
+  'row' => 
+  array (
+    'source' => 'channel',
+    'source_id' => '0',
+    'name' => 'lmbj',
+    'title' => '栏目背景图',
+    'type' => 'image',
+    'decimals' => '0',
+    'minimum' => '',
+    'maximum' => '',
+    'setting' => 
+    array (
+      'table' => '',
+      'conditions' => '',
+      'key' => '',
+      'value' => '',
+    ),
+    'content' => 'value1|title1
+value2|title2',
+    'defaultvalue' => '',
+    'rule' => '',
+    'msg' => '',
+    'ok' => '',
+    'tip' => '',
+    'length' => '255',
+    'isfilter' => '0',
+    'iscontribute' => '0',
+    'extend' => '',
+    'status' => 'normal',
+  ),
+  'source' => 'channel',
+  'source_id' => '0',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001049s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/fields.php
+[ info ] [ RUN ] app\admin\controller\cms\Fields->add[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.006594s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:45+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/fields/index/source/channel/source_id/0?sort=weigh&order=desc&_=1667056618840
+[运行时间：0.059502s] [吞吐率：16.81req/s] [内存消耗：4,523.05kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002480s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002497s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000207s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => '500.zjszjs.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  '_' => '1667056618840',
+  'source' => 'channel',
+  'source_id' => '0',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001093s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/fields.php
+[ info ] [ RUN ] app\admin\controller\cms\Fields->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000123s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:48+08:00 ] 222.247.204.72 POST 500.zjszjs.com/cms.php/ajax/weigh
+[运行时间：0.078776s] [吞吐率：12.69req/s] [内存消耗：4,301.84kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002329s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002346s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000204s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'weigh',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'origin' => 'https://500.zjszjs.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '395',
+  'host' => '500.zjszjs.com',
+)
+[ info ] [ PARAM ] array (
+  'ids' => '90,85,84,83,80,56,100,id,type,model_id,parent_id,name,image,flag,seotitle,keywords,description,diyname,outlink,items,weigh,channeltpl,listtpl,showtpl,pagesize,iscontribute,isnav,createtime,updatetime,status,lmimg,cpindex,target,href,lanmujj,nofoot,lmbj',
+  'changeid' => '100',
+  'pid' => '',
+  'field' => 'weigh',
+  'orderway' => 'desc',
+  'table' => 'cms_fields',
+  'pk' => 'id',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001040s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->weigh[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Ajax.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.012203s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:48+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/fields/index/source/channel/source_id/0?sort=weigh&order=desc&_=1667056618841
+[运行时间：0.055953s] [吞吐率：17.87req/s] [内存消耗：4,523.05kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002302s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002319s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000206s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.fields',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => '500.zjszjs.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  '_' => '1667056618841',
+  'source' => 'channel',
+  'source_id' => '0',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001031s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/fields.php
+[ info ] [ RUN ] app\admin\controller\cms\Fields->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Fields.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000122s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:49+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/channel?ref=addtabs
+[运行时间：0.045405s] [吞吐率：22.02req/s] [内存消耗：4,063.84kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002344s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002362s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000217s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.channel',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'ref' => 'addtabs',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001041s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000138s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:50+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/index/index
+[运行时间：0.081935s] [吞吐率：12.20req/s] [内存消耗：4,574.09kb] [文件加载：152]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002355s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002373s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000205s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001041s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/public/../application/admin/view/index/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'menulist',
+  6 => 'navlist',
+  7 => 'fixedmenu',
+  8 => 'referermenu',
+  9 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000040s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000172s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:50+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/channel?addtabs=1
+[运行时间：0.081705s] [吞吐率：12.24req/s] [内存消耗：4,699.14kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002357s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002375s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000205s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.channel',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001046s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/channel.php
+[ info ] [ RUN ] app\admin\controller\cms\Channel->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Channel.php ]
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/public/../application/admin/view/cms/channel/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'modelList',
+  6 => 'channelList',
+  7 => 'typeList',
+  8 => 'statusList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000041s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000141s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:50+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/archives?addtabs=1
+[运行时间：0.127937s] [吞吐率：7.82req/s] [内存消耗：4,833.66kb] [文件加载：147]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002336s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002353s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000203s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'iframe',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'addtabs' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001021s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Archives.php ]
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/public/../application/admin/view/cms/archives/index.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'channelOptions',
+  6 => 'secondChannelOptions',
+  7 => 'flagList',
+  8 => 'statusList',
+  9 => 'modelList',
+  10 => 'specialList',
+) ]
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000043s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000124s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:50+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/ajax/lang?callback=define&controllername=index&lang=zh-cn&v=1667056609&v=1667056609
+[运行时间：0.035627s] [吞吐率：28.07req/s] [内存消耗：3,446.41kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002333s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002349s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000215s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'script',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'lang' => 'zh-cn',
+  'v' => '1667056609',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001408s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000126s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:50+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.archives&lang=zh-cn&v=1667056610&v=1667056610
+[运行时间：0.056936s] [吞吐率：17.56req/s] [内存消耗：3,445.00kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002352s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002368s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000216s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'script',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.archives',
+  'lang' => 'zh-cn',
+  'v' => '1667056610',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001351s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000128s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:50+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/ajax/lang?callback=define&controllername=cms.channel&lang=zh-cn&v=1667056610&v=1667056610
+[运行时间：0.069608s] [吞吐率：14.37req/s] [内存消耗：3,443.80kb] [文件加载：134]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002465s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002482s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000217s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'script',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'cms.channel',
+  'lang' => 'zh-cn',
+  'v' => '1667056610',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.002735s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/channel.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000128s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:51+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/ajax/wipecache?type=all&_=1667056632183
+[运行时间：0.067259s] [吞吐率：14.87req/s] [内存消耗：3,688.91kb] [文件加载：139]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002561s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002578s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000205s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'wipecache',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'all',
+  '_' => '1667056632183',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001037s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->wipecache[ /www/wwwroot/500.zjszjs.com/application/admin/controller/Ajax.php ]
+[ info ] [ BEHAVIOR ] Run \addons\tinymce\Tinymce @wipecache_after [ RunTime:0.000331s ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000120s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:51+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/channel/index?sort=weigh&order=desc&_=1667056632407
+[运行时间：0.088122s] [吞吐率：11.35req/s] [内存消耗：4,698.29kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002288s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002314s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000209s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.channel',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => '500.zjszjs.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh',
+  'order' => 'desc',
+  '_' => '1667056632407',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001032s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/channel.php
+[ info ] [ RUN ] app\admin\controller\cms\Channel->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Channel.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000123s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:51+08:00 ] 222.247.204.72 GET 500.zjszjs.com/cms.php/cms/archives/index?sort=weigh+DESC%2Cid+DESC&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1667056632420
+[运行时间：0.090000s] [吞吐率：11.11req/s] [内存消耗：4,864.87kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002342s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002359s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000216s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cms.archives',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'same-origin',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => '500.zjszjs.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'sort' => 'weigh DESC,id DESC',
+  'order' => 'desc',
+  'offset' => '0',
+  'limit' => '10',
+  'filter' => '{}',
+  'op' => '{}',
+  '_' => '1667056632420',
+)
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001114s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/admin/lang/zh-cn/cms/archives.php
+[ info ] [ RUN ] app\admin\controller\cms\Archives->index[ /www/wwwroot/500.zjszjs.com/application/admin/controller/cms/Archives.php ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000122s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:51+08:00 ] 222.247.204.72 GET 500.zjszjs.com/
+[运行时间：0.140285s] [吞吐率：7.13req/s] [内存消耗：5,000.06kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002341s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002358s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000215s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/500.zjszjs.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001210s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/addons/cms/view/default1/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000146s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:52+08:00 ] 222.247.204.72 GET 500.zjszjs.com/
+[运行时间：0.125056s] [吞吐率：8.00req/s] [内存消耗：4,658.95kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002502s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002519s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000244s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'index',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/500.zjszjs.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001276s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/addons/cms/lang/zh-cn.php
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/addons/cms/view/default1/index.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000124s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:52+08:00 ] 222.247.204.72 GET 500.zjszjs.com/about.html
+[运行时间：0.126291s] [吞吐率：7.92req/s] [内存消耗：5,226.17kb] [文件加载：159]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002485s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002510s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000217s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'channel',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://500.zjszjs.com/',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'about',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/500.zjszjs.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001521s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/addons/cms/view/default1/channel_about.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__FILTERLIST__',
+  5 => '__ORDERLIST__',
+  6 => '__PAGELIST__',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000086s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:53+08:00 ] 222.247.204.72 GET 500.zjszjs.com/about.html
+[运行时间：0.106071s] [吞吐率：9.43req/s] [内存消耗：4,745.41kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002497s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002515s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000221s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'channel',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://500.zjszjs.com/about.html',
+  'sec-fetch-dest' => 'image',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'about',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/500.zjszjs.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001290s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/addons/cms/view/default1/channel_about.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__FILTERLIST__',
+  5 => '__ORDERLIST__',
+  6 => '__PAGELIST__',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000079s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:53+08:00 ] 222.247.204.72 GET 500.zjszjs.com/All.html
+[运行时间：0.119673s] [吞吐率：8.36req/s] [内存消耗：5,292.97kb] [文件加载：159]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002555s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002574s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000213s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'channel',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://500.zjszjs.com/about.html',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'All',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/500.zjszjs.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001276s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/addons/cms/view/default1/list_service.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__FILTERLIST__',
+  5 => '__ORDERLIST__',
+  6 => '__PAGELIST__',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000084s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:53+08:00 ] 222.247.204.72 GET 500.zjszjs.com/All.html
+[运行时间：0.106964s] [吞吐率：9.35req/s] [内存消耗：4,800.55kb] [文件加载：153]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002541s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002558s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000232s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'channel',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://500.zjszjs.com/All.html',
+  'sec-fetch-dest' => 'image',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'diyname' => 'All',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/500.zjszjs.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001459s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/addons/cms/view/default1/list_service.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__FILTERLIST__',
+  5 => '__ORDERLIST__',
+  6 => '__PAGELIST__',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000077s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:54+08:00 ] 222.247.204.72 GET 500.zjszjs.com/All/Barlton-Marble-presents-itself-as-2.html
+[运行时间：0.115536s] [吞吐率：8.66req/s] [内存消耗：4,968.97kb] [文件加载：154]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002474s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002491s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000227s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'archives',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://500.zjszjs.com/All.html',
+  'sec-fetch-dest' => 'document',
+  'sec-fetch-user' => '?1',
+  'sec-fetch-mode' => 'navigate',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'catename' => 'All',
+  'diyname' => 'Barlton-Marble-presents-itself-as-2',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/500.zjszjs.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001280s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/addons/cms/view/default1/show_service.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__ARCHIVES__',
+  5 => 'title',
+  6 => '__MODEL__',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000084s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-10-29T23:16:55+08:00 ] 222.247.204.72 GET 500.zjszjs.com/All/Barlton-Marble-presents-itself-as-2.html
+[运行时间：0.101623s] [吞吐率：9.84req/s] [内存消耗：4,668.22kb] [文件加载：150]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @app_init [ RunTime:0.002311s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002328s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000210s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\addons\\Route',
+    1 => 'execute',
+  ),
+  'var' => 
+  array (
+    'addon' => 'cms',
+    'controller' => 'archives',
+    'action' => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_26a479259908d7c39183bd97a6b498bf=1667025486; _ga=GA1.2.1202922122.1667025487; _gid=GA1.2.818376080.1667025487; PHPSESSID=j6b9q74hsntea4ccnvkgjmahev; think_var=zh-cn; Hm_lpvt_26a479259908d7c39183bd97a6b498bf=1667052450',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'https://500.zjszjs.com/All/Barlton-Marble-presents-itself-as-2.html',
+  'sec-fetch-dest' => 'image',
+  'sec-fetch-mode' => 'no-cors',
+  'sec-fetch-site' => 'same-origin',
+  'accept' => 'image/avif,image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'host' => '500.zjszjs.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'catename' => 'All',
+  'diyname' => 'Barlton-Marble-presents-itself-as-2',
+)
+[ info ] [ RUN ] think\addons\Route->execute[ /www/wwwroot/500.zjszjs.com/vendor/karsonzhang/fastadmin-addons/src/addons/Route.php ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/public/../application/common/lang/zh-cn/addon.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @addon_begin [ RunTime:0.001252s ]
+[ info ] [ LANG ] /www/wwwroot/500.zjszjs.com/addons/cms/lang/zh-cn.php
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/500.zjszjs.com/addons/cms/view/default1/show_service.html [ array (
+  0 => 'config',
+  1 => 'user',
+  2 => 'site',
+  3 => '__CHANNEL__',
+  4 => '__ARCHIVES__',
+  5 => 'title',
+  6 => '__MODEL__',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ BEHAVIOR ] Run \addons\cms\Cms @view_filter [ RunTime:0.000084s ]
+[ info ] [ LOG ] INIT File

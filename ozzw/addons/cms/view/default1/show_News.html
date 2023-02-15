@@ -1,0 +1,40 @@
+{include file="common/top" /}
+{include file="common/mbx" /} 
+ 
+<div class="NewsBJ">
+    <div class="box News">
+        <div class="NewsLeft"> 
+        <h1>{cms:archives name="title" /}</h1>
+         <div class="Newstime">{:date('Y-m-d', $__ARCHIVES__.publishtime)}</div>
+          <div class="BJQ">
+              {cms:archives name="content" /}
+          </div>
+          <div class="fenye">
+		    {cms:prevnext id="prev" type="prev" archives="$__ARCHIVES__.id" channel="$__CHANNEL__.id"}
+            <a href="{$prev.url}" class="fl">{$prev.title}</a>
+            {/cms:prevnext}
+            
+             {cms:prevnext id="next" type="next" archives="$__ARCHIVES__.id" channel="$__CHANNEL__.id"}
+            <a href="{$next.url}" class="fr">{$next.title}</a>
+            {/cms:prevnext}
+	    </div>
+	   </div>
+	   
+	   <div class="NewsRight">
+	       <h2>Related</h2>
+	        {cms:arclist id="item" row="6"  channel="__CHANNEL__.id" orderby="weigh" orderway="desc" cache="0" condition="`id` != $__ARCHIVES__->id" } 
+	        <a href="{$item.url}">
+	            <img src="{$item.image}">
+	            <div class="NewsRightTxt">
+	                <h3>{$item.title}</h3>
+	                <p>{:date('M-d-Y', $item.publishtime)}</p>
+	            </div>
+	        </a>
+            {/cms:arclist}  
+       </div>
+    </div>
+
+</div>
+{include file="common/foot" /}
+
+	

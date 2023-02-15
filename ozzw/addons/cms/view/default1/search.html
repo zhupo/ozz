@@ -1,0 +1,40 @@
+{include file="common/top" /}
+<div class="searchList box qc">
+    <h1>{cms:config name="cms.title"/}</h1>
+    	 <div class="productRight" style="">
+ 		   <ul>
+			{cms:pagelist id="item"}
+			<li>
+			     {range name="$site.lspf" value="0" type="in"}
+			     <a href="{$item.url}"  title="{$item.title}">
+    				    <div class="imghover"><img src="{$item.image}"></div>
+    				    <h3>{$item.title}</h3>
+    				    {notempty name="$item.description"}<p>{$item.description}</p>{/notempty}
+    				    {notempty name="$item.price"}<em>{$item.price}</em>{/notempty}
+				    </a>
+			     {/range}
+			   
+			   {range name="$site.lspf" value="1" type="in"}  
+			   <a onclick="WindowShow('{$item.title}','{$item.image}',this)" title="{$item.title}">
+				    <div class="imghover"><img src="{$item.image}"></div>
+				    <h3>{$item.title}</h3>
+				    {notempty name="$item.description"}<p>{$item.description}</p>{/notempty}
+				    {notempty name="$item.price"}<em>{$item.price}</em>{/notempty}
+				    </a>
+               {/range}    
+        	</li>
+			{/cms:pagelist}
+			 
+		</ul>
+		
+	
+		<div class="Pagination">
+            {cms:pageinfo type="full" /}
+        </div>
+       
+ 		     
+ 		</div>
+ 		
+ 		
+</div>
+{include file="common/foot" /}

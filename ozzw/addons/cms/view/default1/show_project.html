@@ -1,0 +1,69 @@
+{include file="common/top" /}
+{include file="common/mbx" /} 
+ 
+<div class="Project box">
+    <div class="ProjectHead">
+          <h1>{cms:archives name="title" /}</h1>
+          
+            {notempty name="$__ARCHIVES__.imgs"}
+          <div class="swiper-container" id="Project">
+              <div class="swiper-wrapper">
+        	  {volist name="$__ARCHIVES__.imgs|explode=',',###" id="image"}
+        	    <div class="swiper-slide" data-src="{$image|cdnurl}"><a class="img43"><img src="{$image|cdnurl}"></a></div>
+        	   {/volist}
+        	  </div>
+         	<div class="swiper-pagination"></div> 
+            <div class="swiper-button-prev"><i class="ico icon-icon--"></i></div>
+           	<div class="swiper-button-next"><i class="ico icon-icon---copy"></i></div>
+         </div>
+          {/notempty}  
+          
+          <div class="BJQ">
+              {cms:archives name="content" /}
+          </div>
+          
+        
+          
+           {notempty name="$__ARCHIVES__.images"}
+          <ul class="ProjectImgs">
+          {volist name="$__ARCHIVES__.images|explode=',',###" id="image"}
+            	<li data-src="{$image|cdnurl}"><a><em  class="img43"><img src="{$image|cdnurl}"></em></a></li>   
+          {/volist}
+          </ul>
+         {/notempty} 
+    </div>
+    
+    
+     <div class="otherProject">
+            <h2>other Project</h2>
+            <ul>
+                
+             {cms:arclist id="item" row="4"  channel="__CHANNEL__.id" orderby="rand" orderway="desc" cache="0" condition="`id` != $__ARCHIVES__->id" }  
+            <li>
+             <a href="{$item.url}" title="{$item.title}">
+                 <div class="imghover img43"><img src="{$item.image}"></div>
+                 <h3>{$item.title}</h3>
+             </a>
+             
+             </li>
+             {/cms:arclist} 
+             </ul>
+        
+    </div>
+    
+
+</div>
+
+
+ 
+            
+ 
+
+ 
+
+
+{include file="common/foot" /}
+
+
+ 
+	

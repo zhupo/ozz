@@ -1,0 +1,33 @@
+{include file="common/top" /}
+{include file="common/mbx" /} 
+ 
+<div class="CareerLsitBJ">
+    <div class="box CareerLsit">
+       
+   
+    
+        <table>
+            {cms:pagelist id="item"}
+            <tr>
+                <td><a href="{$item.url}"  title="{$item.title}">{$item.title}</a></td>
+                <td><i class="ico icon-dizhi3"></i>{$item.address}</td>
+                <td><i class="ico icon-rili"></i>{:date('Y-m-d', $item.publishtime)}</td>
+            </tr>
+            {/cms:pagelist}
+        </table>
+    
+    	<div class="Pagination">
+            {cms:pageinfo type="full" /}
+        </div>
+       
+ 
+    </div>
+ 
+</div>
+
+
+ 
+{include file="common/foot" /}
+
+
+ 

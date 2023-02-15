@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2022-11-19T08:44:39+08:00 ] 185.7.214.218 GET 8.129.145.153:443/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession
+[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/500.zjszjs.com/thinkphp/lang//../../../..//////////dev/cmdb/sslvpn_websession.php) is not within the allowed path(s): (/www/wwwroot/500.zjszjs.com/:/tmp/)
+---------------------------------------------------------------
+[ 2022-11-19T18:46:45+08:00 ] 185.7.214.218 GET 8.129.145.153:443/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession
+[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/500.zjszjs.com/thinkphp/lang//../../../..//////////dev/cmdb/sslvpn_websession.php) is not within the allowed path(s): (/www/wwwroot/500.zjszjs.com/:/tmp/)

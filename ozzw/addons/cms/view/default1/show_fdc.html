@@ -1,0 +1,76 @@
+{include file="common/top" /}
+   
+    	    <div class="swiper-container" id="FdcShow">
+                  <div class="swiper-wrapper">
+                    {volist name="$__ARCHIVES__.images|explode=',',###" id="image"}
+            	    <div class="swiper-slide"><em class="img43"><img src="{$image|cdnurl}"></em></div>
+            	   {/volist}
+            	  </div>
+             	<div class="swiper-pagination pchide"></div> 
+                <div class="swiper-button-prev"><i class="ico icon-icon--"></i></div>
+               	<div class="swiper-button-next"><i class="ico icon-icon---copy"></i></div>
+            </div>
+
+
+<div class="FdcShowBJ">
+<div class="FdcShow box">
+        {cms:blocklist id="block" name="dl" orderby="weigh" orderway="desc" } 
+              <div class="peizhi">
+                 
+                   <div class="AgentDetails">
+                      <div class="AgentDetailsTitle"><i class="ico {$block.image}"></i></div>
+                      <h3>{$block.title}</h3>
+                      {volist name="$block.images|explode=',',###" id="image"}
+                      <em>{$image|cdnurl}</em>
+                      <a href="{$block.intro[$key]['txt']}">{$block.intro[$key]['info']}</a>
+                      {/volist}
+                  </div>
+                 
+                </div>
+                {/cms:blocklist}
+           
+               
+              
+             
+		   
+				
+				<div class=" FdcShowTitle">
+				    <h1>{cms:archives name="title" /}</h1>
+				    <div class="FdcPeizhi">
+				         {notempty name="$__ARCHIVES__.add"}<strong>{cms:archives name="add" /}</strong>{/notempty} 
+                          <ul>
+                              {notempty name="$__ARCHIVES__.price"}<li><i class="ico icon-jianzhu"></i><em>{cms:archives name="price" /}</em></li>{/notempty} 
+                              
+                              
+                              
+                              {notempty name="$__ARCHIVES__.woshi"}<li><i class="ico icon-chuang2"></i><em>
+                                  {between name="$__ARCHIVES__.woshi" value="10,10"}0{else/}{cms:archives name="woshi" /}{/between}
+                                 </em></li>{/notempty} 
+                              {notempty name="$__ARCHIVES__.yushi"}<li><i class="ico icon-bathroom-fill"></i><em>
+                                  {between name="$__ARCHIVES__.yushi" value="10,10"}0{else/}{cms:archives name="yushi" /}{/between}
+                                  </em></li>{/notempty} 
+                              {notempty name="$__ARCHIVES__.chewei"}<li><i class="ico icon-chuzu"></i><em>
+                                  {between name="$__ARCHIVES__.chewei" value="10,10"}0{else/}{cms:archives name="chewei" /}{/between}
+                                  </em></li>{/notempty} 
+                             
+                          </ul>
+				    </div>
+				    <div class="BJQ">
+				    {cms:archives name="content" /}
+				     </div>
+				</div>
+ 
+
+
+</div>
+</div> 
+ 
+
+ 
+
+
+{include file="common/foot" /}
+
+
+ 
+	

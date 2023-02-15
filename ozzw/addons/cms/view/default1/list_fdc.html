@@ -1,0 +1,95 @@
+{include file="common/top" /}
+{include file="common/mbx" /} 
+
+
+<div class="FdcLitsBJ" id="FdcLitsBJ">
+        
+<div class="FdcLits box">
+    <div class="filterBox">
+     <div class="filter">
+         
+         <form action="{cms:channel name="url" /}">
+                    <input placeholder="Search"  name="title" {if !empty($v)}value="{$v}"{/if}></input>
+                    <button><i class="ico icon-icon-test"></i></button>
+         </form>
+         
+        {cms:pagefilter id="filter" key="index" exclude=""}
+        <div class="filterselect">
+        <em>{$filter.title}</em>    
+        <select onchange="window.location=this.value;">
+   			{volist name="$filter.content" id="item"}
+   			<option {$item.active?'selected':''} value="{$item.url}">{$item.title}</option>
+   			{/volist}
+       </select>
+        </div>
+       {/cms:pagefilter}
+       
+       
+        {cms:pagefilter id="filter" key="index" exclude=""}
+        <dl>
+       
+       <dt>{$filter.title}</dt>
+       <dd>
+        {volist name="$filter.content" id="item"}
+            <a class="{$item.active?'this':''}" href="{$item.url}&multiple=1#FdcLitsBJ">
+             <span><i class="ico icon-choice2"></i></span><strong>{$item.title}</strong>
+            </a>
+        
+        {/volist}
+       </dd>
+        </dl>
+         {/cms:pagefilter}
+      
+    </div>
+</div>
+
+        <div class="FdcLitsLeft">
+        <ul>
+			{cms:pagelist id="item"}
+			<li>
+				<a href="{$item.url}"  title="{$item.title}">
+				<div class="imghover img43"><img src="{$item.image}"></div>
+				
+				<div class="FdcLitstxt">
+    				<h3>{$item.title}</h3>
+    				 {notempty name="$item.add"}<h4>{$item.add}</h4>{/notempty}
+    				 {notempty name="$item.price"}<span>{$item.price}</span>{/notempty}
+    		        <h5>
+    		            {notempty name="$item.woshi"}
+    		            <i class="ico icon-chuang2"></i>
+    		                <em>
+    		                {between name="$item.woshi" value="10,10"}0{else/}{$item.woshi}{/between}
+    		                </em>
+    		             {/notempty}
+    		            {notempty name="$item.yushi"}<i class="ico icon-bathroom-fill"></i><em>
+    		                {between name="$item.yushi" value="10,10"}0{else/}{$item.yushi}{/between}
+    		                </em>{/notempty}
+    		            {notempty name="$item.chewei"}<i class="ico icon-chuzu"></i><em>
+    		                {between name="$item.chewei" value="10,10"}0{else/}{$item.chewei}{/between}
+    		                </em>{/notempty}
+    		        </h5>
+		        </div>
+				</a>
+			</li>
+			{/cms:pagelist}
+	  	</ul>
+	  	<div class="Pagination">
+            {cms:pageinfo type="full" /}
+        </div>
+        </div>
+		
+	
+	
+        
+   
+</div>
+	
+
+
+</div> 
+
+ 
+{include file="common/foot" /}
+
+
+ 

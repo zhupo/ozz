@@ -1,0 +1,35 @@
+{include file="common/top" /}
+{include file="common/mbx" /} 
+ 
+<div class="CareerBJ">
+    <div class="box Career">
+    <div class="CareerSHow">
+         <h1>{cms:archives name="title" /}</h1>
+         <div class="CareerSHowpeizhi">
+            <span><i class="ico icon-dizhi3"></i>{cms:archives name="address" /}</span> 
+            <span><i class="ico icon-rili"></i>{:date('Y/m/d', $__ARCHIVES__.publishtime)}</span> 
+         </div>
+         
+          <div class="BJQ">
+              {cms:archives name="content" /}
+          </div>
+           
+       
+   </div>
+    
+    <div class="CareerRight">
+        <h3>相关职位</h3>
+        <ul>
+        {cms:arclist id="item" row="10"  channel="__CHANNEL__.id" orderby="weigh" orderway="desc" cache="0" condition="`id` != $__ARCHIVES__->id" }  
+            <li>
+             <a href="{$item.url}" title="{$item.title}">{$item.title}</a>
+            </li>
+        {/cms:arclist} 
+        </ul>
+    </div>
+    </div>
+
+</div>
+{include file="common/foot" /}
+
+	

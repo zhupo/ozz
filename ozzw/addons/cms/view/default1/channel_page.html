@@ -1,0 +1,125 @@
+{include file="common/top" /}
+{include file="common/mbx" /}
+ 
+<div class="pageBJ">
+<div class="page"> 
+{cms:blocklist id="block" name="page"  condition="`xg` like '%$__CHANNEL__->id%'" orderby="weigh" orderway="desc"} 
+
+
+
+{range name="block.ys" value="1" type="in"}
+<!--编辑器 1-->
+{notempty name="block.content"}
+<div class="BJQBJ Page{$__CHANNEL__.id}{$block.title}">
+     <div  class="PageBJQ BJQ box">
+         {$block.content}
+     </div>
+</div>     
+{/notempty}      
+{/range}
+
+
+
+{range name="block.ys" value="2" type="in"}
+<!--编辑器+图 2--> 
+<div class="pagelIstBox {range name="block.lr" value="3" type="in"}n2{/range} Page{$__CHANNEL__.id}{$block.title}">
+        <div class="pagelIst box">
+            <img src="{$block.image}">
+            <div class="pagelIsttxt">
+                {$block.content}
+                {notempty name="$block.url"}<a class="PageLearnmore" href="{$block.url}">Learn more</a>{/notempty}
+            </div>
+        </div> 
+</div>
+{/range} 
+
+
+
+{range name="block.ys" value="3" type="in"}
+<!--编辑器+图册 3--> 
+
+<div class="pageOlBJ Page{$__CHANNEL__.id}{$block.title}">
+    {notempty name="$block.content"}
+    <div class="pageOlBJQ box">
+        {$block.content}
+    </div>
+    {/notempty}
+    {notempty name="block.imgs"}
+    <div class="pageOl box">
+            <ol>
+                  {volist name="$block.imgs|explode=',',###" id="image"}
+                    <li data-src="{$image|cdnurl}">
+                        <a>
+                           <div class="img43"><img src="{$image|cdnurl}"></div>
+                       </a>
+                     </li> 
+                  {/volist}
+            </ol>
+    </div>
+    {/notempty}
+</div>
+
+{/range}
+
+
+ 
+
+
+{range name="block.ys" value="4" type="in"}
+<!--编辑器+图集 4--> 
+<div class="pageUlBJ Page{$__CHANNEL__.id}{$block.title}">
+    {notempty name="$block.content"}
+    <div class="pageUlBJQ box">
+        {$block.content}
+    </div>
+    {/notempty}
+    <div class="pageUl box">
+          <ul>
+          {volist name="$block.images|explode=',',###" id="image"}
+            <li>
+                <em class=""><img src="{$image|cdnurl}"></em>
+                {notempty name="$block.intro[$key]['info']"}<h3>{$block.intro[$key]['info']}</h3>{/notempty}
+                {notempty name="$block.intro[$key]['txt']"}<p>{$block.intro[$key]['txt']}</p>{/notempty}
+             </li> 
+          {/volist}
+          </ul>
+     </div>
+     
+</div>     
+{/range} 
+
+
+
+
+{range name="block.ys" value="5" type="in"}
+<!--编辑器+图集+链接 5--> 
+<div class="pageUlBJColor Page{$__CHANNEL__.id}{$block.title}" {notempty name="$block.image"}style="background-image: url({$block.image});"{/notempty}>
+    {notempty name="$block.content"}
+    <div class="pageUlBJColorBJQ box">
+        {$block.content}
+    </div>
+    {/notempty}
+    <div class="pageColorUl box">
+          <ul>
+          {volist name="$block.images|explode=',',###" id="image"}
+            <li>
+                <em class=""><img src="{$image|cdnurl}"></em>
+                {notempty name="$block.intro[$key]['info']"}<h3>{$block.intro[$key]['info']}</h3>{/notempty}
+                {notempty name="$block.intro[$key]['txt']"}<p>{$block.intro[$key]['txt']}</p>{/notempty}
+             </li> 
+          {/volist}
+          </ul>
+     </div>
+     
+     {notempty name="$block.url"}<a class="pageUlBJColorMore" href="{$block.url}">Learn more</a>{/notempty}
+</div>     
+{/range} 
+
+
+
+{/cms:blocklist}   
+</div>
+</div>  
+
+{include file="common/foot" /}
+ 

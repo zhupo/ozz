@@ -1,0 +1,26 @@
+---------------------------------------------------------------
+[ 2022-11-20T04:52:23+08:00 ] 185.7.214.218 GET 8.129.145.153:443/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession
+[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/500.zjszjs.com/thinkphp/lang//../../../..//////////dev/cmdb/sslvpn_websession.php) is not within the allowed path(s): (/www/wwwroot/500.zjszjs.com/:/tmp/)
+---------------------------------------------------------------
+[ 2022-11-20T11:21:05+08:00 ] 205.210.31.16 GET 8.129.145.153:443/
+[ error ] [8]未定义数组索引: banner
+---------------------------------------------------------------
+[ 2022-11-20T11:39:52+08:00 ] 222.247.205.94 GET 500.zjszjs.com/Contact-us.html?__diyname__=customer&__token__=02e604d472c7955962287a756ef36c7e&row%5Bname%5D=22&row%5Bemail%5D=22%40qq.com&row%5Btelephone%5D=asdas&row%5Bcontent%5D=asdasd&verify=3123
+[ error ] [2]strlen() expects parameter 1 to be string, array given
+---------------------------------------------------------------
+[ 2022-11-20T11:41:13+08:00 ] 222.247.205.94 GET 500.zjszjs.com/d/customer.html
+[ error ] [0]模板文件不存在:/www/wwwroot/500.zjszjs.com/addons/cms/view/default1/diyform_list.html
+---------------------------------------------------------------
+[ 2022-11-20T12:55:28+08:00 ] 222.247.205.94 GET 500.zjszjs.com/product.html
+[ error ] [0]类的属性不存在:addons\cms\model\Archives->nr
+---------------------------------------------------------------
+[ 2022-11-20T13:04:33+08:00 ] 222.247.205.94 GET 500.zjszjs.com/product.html
+[ error ] [0]语法解析错误: syntax error, unexpected 'rn' (T_STRING), expecting ',' or ')'
+---------------------------------------------------------------
+[ 2022-11-20T16:44:06+08:00 ] 185.7.214.218 GET 8.129.145.153:443/remote/fgt_lang?lang=/../../../..//////////dev/cmdb/sslvpn_websession
+[ error ] [2]is_file(): open_basedir restriction in effect. File(/www/wwwroot/500.zjszjs.com/thinkphp/lang//../../../..//////////dev/cmdb/sslvpn_websession.php) is not within the allowed path(s): (/www/wwwroot/500.zjszjs.com/:/tmp/)
+---------------------------------------------------------------
+[ 2022-11-20T21:51:45+08:00 ] 222.247.205.94 GET 500.zjszjs.com/
+[运行时间：0.044120s] [吞吐率：22.67req/s] [内存消耗：1,712.40kb] [文件加载：96]
+[ error ] [0]Parse error: syntax error, unexpected ','[/www/wwwroot/500.zjszjs.com/application/config.php:239]
+[ info ] [ LOG ] INIT File

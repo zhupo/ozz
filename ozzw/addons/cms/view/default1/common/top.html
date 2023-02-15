@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<head>
+    
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1.0,maximum-scale=1.0">   
+{if condition="empty($__CHANNEL__) AND empty($__ARCHIVES__) AND empty($__PAGE__)"}
+<title>{$site.name}</title>
+<meta name="keywords" content="{$site.keywords}" />
+<meta name="description" content="{$site.description}" />
+{else/}
+<title>{cms:config name="cms.title"/}-{$site.name}</title>
+<meta name="keywords" content="{cms:config name='cms.keywords'/}" />
+<meta name="description" content="{cms:config name='cms.description'/}" />
+{/if}
+<!-- link -->
+<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/c/font_601403_7woby5vkd3i.css">
+<link rel="stylesheet" ype="text/css" href="__CDN__/template/default1/css/common.css?v={$site.version}">
+<link rel="stylesheet" type="text/css"media="screen and (min-width:1200px)" href="__CDN__/template/default1/css/pc.css?v={$site.version}">
+<link rel="stylesheet" type="text/css" media="screen and (max-width:1199px)" href="__CDN__/template/default1/css/wap.css?v={$site.version}">
+<!-- link -->
+<!-- script -->
+<script type="text/javascript" src="__CDN__/template/default1/js/jquery.js?v={$site.version}"></script>
+<script type="text/javascript" src="__CDN__/template/default1/js/img.js?v={$site.version}"></script>
+<script type="text/javascript" src="__CDN__/template/default1/js/easyzoom.js?v={$site.version}"></script>
+<script type="text/javascript" src="__CDN__/template/default1/js/swiper.js?v={$site.version}"></script>
+<!-- script --> 
+</head>
+<body class="{if condition="$_SERVER['REQUEST_URI'] neq '/'"}content{/if}" {if condition="$_SERVER['REQUEST_URI'] neq '/'"}style="background-image: url({cms:channel name="lmbj" /});"{/if}>
+    
+    
+{range name="$site.head" value="1" type="in"}
+<div class="indexNav" id="indexNav">
+     <div class="indexheadbj">
+        <div class="box indexhead">
+                <div class="indexheadL">Welcome to {$site.name}</div>
+                <div class="indexheaR">
+               {cms:blocklist id="block" name="contact" orderby="weigh" orderway="desc" condition="1=foottop"} 
+                    <p><a href="{$block.url}" title=""><span><i class="ico {$block.image}"></i></span> {$block.title} : {:str_replace(["<p>","</p>"], "", $block.content)}</a></p>
+               {/cms:blocklist}
+               </div>
+        </div>
+    </div>
+    
+    <div class="indexNavNr box">
+        <a class="logo" href="/">
+         {notempty name="$site.logo"}<img class="logo1" src="{$site.logo}">{/notempty}
+         {notempty name="$site.logo2"}<img class="logo2" src="{$site.logo2}">{/notempty}
+         <h1>{$site.logotxt}</h1>
+         
+        </a>
+        
+        <div class="indexNavNrRight">
+        <div class="navA">   
+            <ul class="qc" id="nav">
+            {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20"}
+                <li>
+                    <a class="{if $nav->is_active}this{/if}" {if $nav.href eq 0}href="{$nav.url}"{/if}  {if $nav.target eq 1}target="_blank"{/if}>{$nav.name}</a>
+                    {if $nav.has_child}
+                    <ul>
+                       
+                        {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
+                        <li><a  href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                        {/cms:arclist}
+                        
+                        {cms:channellist id="son" type="son" condition="1=isnav" typeid="nav['id']" cache="0" row="20"}
+                           
+                            <li><a class="{if $son->is_active}this{/if}" {if $son.href eq 0}href="{$son.url}"{/if}>{$son.name}</a>
+                                 {if $son.has_child}
+                                 <ul>
+                                    {cms:channellist id="sons" condition="1=isnav" type="son" typeid="son['id']" cache="0" }
+                                    <li><a class="{if $sons->is_active}this{/if}"  href="{$sons.url}">{$sons.name}</a></li>
+                                    {/cms:channellist}
+                                </ul>
+                                {/if}
+                            </li>
+                           
+                        {/cms:channellist}
+                    </ul>
+                    {else /}
+                    <ul>
+                        {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
+                        <li><a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                        {/cms:arclist}
+                    </ul>
+                   {/if}
+               </li>
+            {/cms:channellist}
+            </ul>
+        </div> 
+        
+         {range name="$site.indexcp" value="1" type="in"}
+        <a class="CartIco" href="/Cart.html"><i class="ico icon-gouwuche"></i><em>0</em></a>
+        {/range}
+        
+        {volist name="$site.languages" id="item"}
+        <a class="RequestAQuote" href="{$item}"><i class="ico icon-dianhuatianchong"></i> {$key}</a>    
+        {/volist}
+        
+        {range name="$site.sousuo" value="1" type="in"}  
+        <div class="sousuoA">
+            <!--  <form action="/s.html" method="post">-->
+            <!--    <input autocomplete = "off" class="form-control" name="q" data-suggestion-url="/addons/cms/search/suggestion.html" type="text" value="" placeholder="Search">-->
+            <!--    <button class="ico icon-sousuo1"></button>-->
+            <!--</form>-->
+                <form action="/Products.html">
+                    <input placeholder="Search"  name="title" {if !empty($v)}value="{$v}"{/if}></input>
+                    <button><i class="ico icon-sousuo1"></i></button>
+                </form>
+        </div>
+        {/range}
+        
+           {range name="$site.language" value="1" type="in"}   
+            <select onchange="doGTranslate(this);">
+                <option value="">Select Language</option>
+                <option value="en|zh-CN">Chinese Simplified</option>
+                <option value="en|en">English</option>
+            </select>
+            <div id="google_translate_element2"></div>
+            <script type="text/javascript">
+            function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}
+            </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+            <style type="text/css">
+            #SelectLanguage{       margin-left: 20px;}
+            #goog-gt-tt {display:none !important;}
+            .goog-te-banner-frame {display:none !important;}
+            .goog-te-menu-value:hover {text-decoration:none !important;}
+            body {top:0 !important;}
+            #google_translate_element2 {display:none!important;}
+            </style>
+            <script type="text/javascript">
+            eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+            </script>
+            {/range}
+            
+          
+        
+        
+       </div>
+   </div>
+</div>
+{/range}  
+    
+    
+ 
+   
+{range name="$site.head" value="2" type="in"}
+<div class="indexNavC" id="indexNav">
+    <div class="headC box">
+        <div class="headCNr"> 
+            <a class="headCNrlogo" href="/">
+             {notempty name="$site.logo"}<img class="logo1" src="{$site.logo}">{/notempty}
+             {notempty name="$site.logo2"}<img class="logo2" src="{$site.logo2}">{/notempty}
+             <h1>{$site.logotxt}</h1>
+            </a>
+             {range name="site.sousuo" value="1" type="in"}  
+                    <div class="sousuonr">
+                           <form action="/s.html" method="post">
+                                <input autocomplete = "off" class="form-control" name="q" data-suggestion-url="/addons/cms/search/suggestion.html" type="text" value="" placeholder="Search">
+                                <button class="ico icon-sousuo1"></button>
+                            </form>
+                            <!--<form action="/buy.html">-->
+                            <!--        <input placeholder="Search"  name="title" {if !empty($v)}value="{$v}"{/if}></input>-->
+                            <!--        <button><i class="ico icon-sousuo1"></i></button>-->
+                            <!--    </form>-->
+                    </div>
+              {/range}
+            <div class="headCRight">
+                 <div class="headEr">
+                        <i class="ico icon-dianhua5"></i>
+                        <p>
+                            {cms:blocklist id="block" name="contact" orderby="weigh" orderway="desc" condition="1=foottop"} 
+                            <a>{$block.title} : {:str_replace(["<p>","</p>"], "", $block.content)}</a>
+                            {/cms:blocklist}
+                        </p>
+                     
+               
+                 </div>
+                  
+            </div>
+        </div>   
+    </div>
+
+
+ <div class="indexNavNrC">
+   <div class="box indexNavNrCBox">
+    <ul class="qc" id="navC">
+    {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20"}
+        <li>
+            <a class="{if $nav->is_active}this{/if}" {if $nav.href eq 0}href="{$nav.url}"{/if}>{$nav.name}</a>
+            {if $nav.has_child}
+            <ul>
+               
+                {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
+                <li><a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                {/cms:arclist}
+                
+                {cms:channellist id="son" type="son" condition="1=isnav" typeid="nav['id']" cache="0"  row="20"}
+                   
+                    <li><a class="{if $son->is_active}this{/if}"  {if $son.href eq 0}href="{$son.url}"{/if}>{$son.name}</a>
+                         {if $son.has_child}
+                         <ul>
+                            {cms:channellist id="sons" condition="1=isnav" type="son" typeid="son['id']" cache="0" row="20"}
+                            <li><a class="{if $sons->is_active}this{/if}"  href="{$sons.url}">{$sons.name}</a></li>
+                            {/cms:channellist}
+                        </ul>
+                        {/if}
+                    </li>
+                   
+                {/cms:channellist}
+            </ul>
+            {else /}
+            <ul>
+                {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
+                <li><a  href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                {/cms:arclist}
+            </ul>
+           {/if}
+        </li>
+    {/cms:channellist}
+    </ul>
+ 
+  
+  {range name="$site.indexcp" value="1" type="in"}
+                <a class="CartIco" href="/Cart.html"><i class="ico icon-gouwuche"></i><em>0</em></a>
+   {/range} 
+   </div>
+    </div>
+</div>
+{/range}  
+
+ 
+
+
+<!-- wapNav -->
+<div class='WapHead'>
+    <!--<a onclick="window.history.go(-1)" class="backtrack"><i class="ico icon-10qiehuanqizuo"></i></a>-->
+    <a class="WapLogo" href="/">
+    {notempty name="$site.logo"}<img src="{$site.logo}">{/notempty}
+    {$site.logotxt} 
+    </a>
+    <i class='ico menu icon-webicon03'></i>
+</div>
+<div class='WapNav'>
+    <ul class="qc">
+    {cms:channellist id="nav" type="top" cache="0" condition="1=isnav" row="20"}
+        <li>
+            <a class="{if $nav->is_active}this{/if}" {if $nav.href eq 0}href="{$nav.url}"{/if}  {if $nav.target eq 1}target="_blank"{/if}>{$nav.name}</a>
+            {if $nav.has_child}
+            <ul>
+                {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
+                <li><a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                {/cms:arclist}
+                {cms:channellist id="son" type="son" typeid="nav['id']" cache="0" condition="1=isnav" row="20"}
+               
+                <li><a class="{if $son->is_active}this{/if}"  {if $son.href eq 0}href="{$son.url}"{/if}>{$son.name}</a>
+                    {if $son.has_child}
+                    <ul>
+                        {cms:channellist id="sons"  type="son" typeid="son['id']" cache="0" condition="1=isnav" row="20"}
+                        <li><a class="{if $sons->is_active}this{/if}"  href="{$sons.url}">{$sons.name}</a></li>
+                        {/cms:channellist}
+                    </ul>
+                    {/if}
+                </li>
+               
+                {/cms:channellist}
+               
+            </ul>
+             {else /}
+            <ul>
+                {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
+                <li><a href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></li>
+                {/cms:arclist}
+            </ul>
+            
+            {/if}
+        </li>
+    {/cms:channellist}
+    </ul> 
+    {range name="site.sousuo" value="1" type="in"}  
+    <div class="sousuonr">
+          <form action="/s.html" method="post">
+                <input autocomplete = "off" class="form-control" name="q" data-suggestion-url="/addons/cms/search/suggestion.html" type="text" value="" placeholder="Search">
+                <button class="ico icon-icon-test"></button>
+            </form>
+    </div>
+    {/range}
+    
+    {range name="$site.language" value="1" type="in"}   
+            <select onchange="doGTranslate(this);">
+                <option value="">Select Language</option>
+                <option value="en|zh-CN">Chinese Simplified</option>
+                <option value="en|en">English</option>
+            </select>
+            <div id="google_translate_element2"></div>
+            <script type="text/javascript">
+            function googleTranslateElementInit2() {new google.translate.TranslateElement({pageLanguage: 'en',autoDisplay: false}, 'google_translate_element2');}
+            </script><script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit2"></script>
+            <style type="text/css">
+            #SelectLanguage{       margin-left: 20px;}
+            #goog-gt-tt {display:none !important;}
+            .goog-te-banner-frame {display:none !important;}
+            .goog-te-menu-value:hover {text-decoration:none !important;}
+            body {top:0 !important;}
+            #google_translate_element2 {display:none!important;}
+            </style>
+            <script type="text/javascript">
+            eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+            </script>
+            {/range}
+
+     
+</div>
+<!-- wapNav -->

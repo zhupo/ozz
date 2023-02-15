@@ -1,0 +1,78 @@
+{include file="common/top" /}
+{include file="common/mbx" /}
+
+<div class="ContactBJ">
+<div class="ContactBox box" id="ContactBox">
+     {notempty name="$__CHANNEL__.lanmujj"}
+        <div class="lanmujj">
+           {cms:channel name="lanmujj" /}
+        </div>
+        {/notempty}     
+	<div class="ContactRight">
+       
+    	<ul>
+    	 {cms:blocklist id="block" name="contact" orderby="weigh" orderway="desc" } 
+    		<li>
+    		    
+                <div>
+                     <span><i class="ico {$block.image}"></i></span>
+                     <p> <em>{$block.title}</em><a href="{$block.url}" >{:str_replace(["<p>","</p>"], "", $block.content)}</a></p>
+                </div>
+            </li>
+    	  {/cms:blocklist} 
+    	</ul>
+   
+    </div>
+   
+  
+    
+    <div class="ContactLeft">
+       
+        <form id="form" onsubmit="return false">
+            <input type="hidden" name="__diyname__" value="customer">
+            {:token()}
+            <div>
+             {notempty name="$site.selectservice"}
+              <select required="">
+                  <option value="">Select Service</option>
+                  {volist name="$site.selectservice" id="item"}
+                    <option value="$item}">{$key}</option>
+                  {/volist}        
+             </select>
+             {/notempty} 
+                
+            <em>*Name</em>    
+            <input name="row[name]" type="text" placeholder="*Name" required=""></input>
+            <em>*Email</em>
+            <input name="row[email]" type="Email" placeholder="*Email" required=""></input>
+            <em>*Phone</em>    
+            <input name="row[telephone]" type="text" placeholder="*Phone" required=""></input>
+            <em>*Message</em>
+            <textarea name="row[content]" type="text" placeholder="*Message" required=""></textarea>
+            
+          
+             <div class="Captcha">
+                         <!--<img src="{:captcha_src()}"  onclick="this.src = '{:captcha_src()}?r=' + Math.random();"/>-->
+                         <!--<input required="" placeholder="Captcha" type="text"    name="verify"></input>-->
+                         <button>SEND</button>
+                    </div>        
+            
+            </div>
+       </form>
+    </div>
+    
+    {notempty name="$site.map"}
+    <div  class="map">
+         {$site.map}
+    </div>
+    {/notempty} 
+   
+   
+</div>
+    
+</div> 
+
+
+
+
+{include file="common/foot" /} 

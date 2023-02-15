@@ -1,0 +1,271 @@
+{include file="common/top" /}
+<div class="swiper-container" id="indexBanner">
+      <div class="swiper-wrapper">
+        {cms:blocklist id="block" name="banner" orderby="weigh" orderway="desc" }   
+        <div class="swiper-slide">
+	        <div class="banner">
+             	<div class="bannerTxt box"{switch name="$block.lr" }
+                                                {case value="1"}style="text-align:left;"{/case}
+                                                {case value="2"}style="text-align:center;"{/case}
+                                                {case value="3"}style="text-align:right;"{/case}
+                                           {/switch}>
+             	    <div class="bannerTxtNr">
+             	            {$block.content}
+             	         	{notempty name="$block.url"}<a href="{$block.url}">{$block.title}</a>{/notempty} 
+             	    </div>
+             	</div>
+             	<img src="{$block.image}">
+             	<i class="ico icon-zuo-copy"></i>
+            </div>
+	    </div>
+	    {/cms:blocklist} 
+	    
+	   
+	  </div>
+ 	{range name="$site.banner" value="1" type="in"}
+ 	<div class="swiper-pagination"></div>
+ 	<div class="swiper-button-prev"><i class="ico icon-icon--"></i></div>
+       	            <div class="swiper-button-next"><i class="ico icon-icon---copy"></i></div>
+ 	
+ 	{/range}
+</div>
+
+
+<script>
+  var indexBanner = new Swiper('#indexBanner', {
+  //effect: "fade",
+  observer:true,
+  observeParents:true,
+  slidesPerColumnFill : 'column', //column row
+  slidesPerView: 1, 
+  spaceBetween: 0,
+  slidesPerColumn: 1,//行
+  slidesPerGroup: 1,//移动个数
+  loop: true,
+  pagination: {
+  el: '#indexBanner .swiper-pagination',
+  clickable: true,
+  },
+  navigation: {
+  nextEl: '#indexBanner .swiper-button-next',
+  prevEl: '#indexBanner .swiper-button-prev',
+  },
+  {range name="$site.banner" value="1" type="in"}
+  autoplay: {
+  delay: 3000, 
+  disableOnInteraction: false,
+  },
+  {/range}
+  breakpoints:{
+  1600:{slidesPerView: 1,spaceBetween: 0, slidesPerColumn:1,},
+  1279:{slidesPerView: 1,spaceBetween: 0,slidesPerColumn:1,},
+  750:{slidesPerView: 1,spaceBetween: 0,slidesPerColumn:1,},
+  },
+  
+ 
+});
+ 
+</script>
+
+
+{range name="$site.indexcp" value="1" type="in"}     
+<div class="IndexProduct">
+    <div class="IndexProductNr">
+       {cms:channellist id="channel" typeid="44" row="20" type="son" condition="0=cpindex"}
+       <dl class="box">
+            <dt><em>{$channel.name}</em>  <a href="{$channel.url}">More</a></dt>
+            {if $channel.has_child}
+             <dd>
+                <ul>
+                    {cms:channellist id="son" type="son" typeid="channel['id']" cache="0" row="20" condition="0=cpindex"}
+                    {cms:arclist id="item" flag="index"  row="10" orderby="rand" channel="son['id']" } 
+                    <li>
+                        <a href="{$item.url}">
+                          <div class="imghover"><img src="{$item.image}"></div>
+                          <div class="IndexProductTxt">
+                              <h3>{$item.title}</h3>
+                              {notempty name="$item.price"}<span>{$item.price}</span>{/notempty} 
+                            
+                          </div>    
+                        </a>
+                    </li>
+                    {/cms:arclist}
+                   
+                    {/cms:channellist}
+                </ul>
+            </dd>
+            {else /}
+            <dd>
+                <ul>
+                    
+                    {cms:arclist id="item" flag="index"  row="4" orderby="rand" channel="channel['id']" } 
+                    <li>
+                        <a href="{$item.url}">
+                          <div class="imghover"><img src="{$item.image}"></div>
+                          <div class="IndexProductTxt">
+                              <h3>{$item.title}</h3>
+                              {notempty name="$item.price"}<span>{$item.price}</span>{/notempty} 
+                            
+                          </div>    
+                        </a>
+                    </li>
+                    {/cms:arclist}
+                    
+                </ul>
+            </dd>
+            {/if}
+        </dl>
+        {/cms:channellist}
+        
+    </div>
+</div>
+{/range} 
+
+
+<!--首页叠加开始--> 
+{cms:blocklist id="block" name="index"  orderby="weigh" orderway="desc"}
+
+{range name="block.ys" value="1" type="in"}
+<!--编辑器-->
+<div class="indexBJQ">
+    <div class="box BJQ">{$block.content}</div>
+</div>
+{/range}
+
+
+
+{range name="block.ys" value="2" type="in"}
+    <!--编辑器+图+链接-->     
+     {range name="block.ww" value="1" type="in"}
+     <!--默认宽度    -->
+     <div class="indexAbout indexAbout{$block.id}" id="about">
+        <div class="indexA {range name="block.lr" value="3" type="in"}indexA2{/range}">
+         <div class="indexAboutTxt box">	
+                {notempty name="$block.image"}<img src="{$block.image}">{/notempty} 
+             	<div class="BJQ" style="{empty name="$block.image"}width:100%;{/empty}">
+             	    {$block.content}
+             	    {notempty name="$block.url"}<a href="{$block.url}">{$block.title}</a>{/notempty} 
+             	</div>
+         </div>
+        </div>
+       
+     </div>
+     {/range}
+ 
+ {range name="block.ww" value="2" type="in"} 
+     <!--全屏宽度    -->
+    <div class="FootCuBox {range name="block.lr" value="3" type="in"}FootCuBox2{/range}">
+        <div class="FootCuImg"><img src="{$block.image}"></div>
+        <div class="FootCuTxt box">
+            <div class="FootCuTxtPd">
+            {$block.content}
+            {notempty name="$block.url"}<a href="{$block.url}">{$block.title}</a>{/notempty} 
+            </div>
+        </div>
+        
+    </div>
+ {/range}
+ 
+{/range}
+
+
+{range name="block.ys" value="3" type="in"}
+<!--编辑器+图册-->
+  <div class="indeximgsBJ">
+    <div class="box">
+        {notempty name="$block.content"}{$block.content}{/notempty} 
+    </div>
+    <ul class="indeximgs box">
+    {volist name="$block.imgs|explode=',',###" id="image"}
+        <li data-src="{$image|cdnurl}">
+            <em class="img43"><img src="{$image|cdnurl}"></em>
+        </li> 
+      {/volist}
+    </ul>
+     </div>
+{/range} 
+
+
+
+{range name="block.ys" value="4" type="in"}
+<!--编辑器+图集-->
+  <div class="indexAUlBJ indexAUlBJ{$block.id}">
+    <div class="box">
+        {notempty name="$block.content"}{$block.content}{/notempty} 
+    </div>
+    <ul class="indexAUl box">
+    {volist name="$block.images|explode=',',###" id="image"}
+        <li>
+            <em><img src="{$image|cdnurl}"></em>
+            <div>
+                {notempty name="$block.intro[$key]['info']"}<h3>{$block.intro[$key]['info']}</h3>{/notempty}
+                {notempty name="$block.intro[$key]['txt']"}<p>{$block.intro[$key]['txt']}</p>{/notempty}
+            </div>
+        </li> 
+      {/volist}
+    </ul>
+     </div>
+{/range} 
+
+
+{range name="block.ys" value="5" type="in"}
+<!--编辑器+图集+背景+链接-->
+ <div class="indexF" {notempty name="$block.image"}style="background-image: url({$block.image});"{/notempty}>
+        {notempty name="$block.content"}
+     	<div class="box indexFHead">
+     	    <div class="BJQ">
+     	        {$block.content}
+     	    </div>
+        </div>
+        {/notempty} 
+      {notempty name="$block.images"}
+      <ul class="box indexFul">
+        {volist name="$block.images|explode=',',###" id="image"}
+            <li>
+                <em><img src="{$image|cdnurl}"></em>
+                <div>
+                    {notempty name="$block.intro[$key]['info']"}<h3>{$block.intro[$key]['info']}</h3>{/notempty}
+                {notempty name="$block.intro[$key]['txt']"}<p>{$block.intro[$key]['txt']}</p>{/notempty}
+                </div>
+            </li> 
+          {/volist}
+        </ul>
+        {/notempty}
+        {notempty name="$block.url"}<a class="indexFa" href="{$block.url}">{$block.title}</a>{/notempty} 
+ </div>
+{/range} 
+
+
+
+
+ 
+
+{/cms:blocklist} 
+<!--首页叠加结束-->
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+
+
+ 
+ 
+    
+ 
+  
+ 
+  
+
+   
+
+{include file="common/foot" /}
