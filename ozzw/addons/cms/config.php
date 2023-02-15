@@ -90,7 +90,7 @@ return [
         'title' => '皮肤',
         'type' => 'string',
         'content' => [],
-        'value' => 'default1',
+        'value' => 'default2',
         'rule' => 'required',
         'msg' => '',
         'tip' => '请确保addons/cms/view有相应的目录',
