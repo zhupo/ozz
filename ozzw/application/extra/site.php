@@ -39,7 +39,7 @@ return array (
   'keywords' => 'OZz Selection Pty Ltd',
   'description' => 'About the Website About the Website About the Website About the Website About the Website About the Website About the Website About the Website About the Website About the Website',
   'logotxt' => 'OZz Selection',
-  'logo' => '',
+  'logo' => '/uploads/20230216/ec8c95bf7c046442c25788cbad56bbfc.png',
   'logo2' => '',
   'head' => '1',
   'indexfw' => '0',
