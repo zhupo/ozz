@@ -1,0 +1,138 @@
+{include file="common/top" /}
+<link href="__CDN__/template/default2/css/font_6.css?v={$site.version}" rel="stylesheet" type="text/css">
+<link href="__CDN__/template/default2/css/font_5.css?v={$site.version}" rel="stylesheet" type="text/css">
+<link href="__CDN__/template/default2/css/themes.css?v={$site.version}" rel="stylesheet" type="text/css">
+<link href="__CDN__/template/default2/css/jquery.bxslider.css?v={$site.version}" rel="stylesheet" type="text/css">
+<link href="__CDN__/template/default2/css/module_1.css?v={$site.version}" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="__CDN__/template/default2/js/jquery.bxslider.js?v={$site.version}"></script>
+<script type="text/javascript" src="__CDN__/template/default2/js/themes.js?v={$site.version}"></script>
+
+<div class="product-detail wrap-module">
+  {include file="common/show_pro_mbx" /} 
+	<div class="wrap">
+<div class="ueeshop_responsive_products_detail products_detail_module1">
+	<div class="gallery">
+		<div class="detail_left">
+		</div>
+						<div class="bigimg">
+						<div class="zoom_out">
+				<a href="{$__ARCHIVES__.image}" class="MagicZoom" id="zoom" rel="zoom-position:custom; zoom-width:350px; zoom-height:350px;">
+					<img src="{$__ARCHIVES__.image}" id="bigimg_src" alt="iwown ECG &amp; Blood Pressure Measuring watch-H1C">
+				</a>
+			</div>
+		</div>
+		<div id="zoom-big"></div>
+		<div class="left_small_img">
+			<div class="left_small_img_inner">
+        {volist name="$__ARCHIVES__.images|explode=',',###" id="image"}
+          <span class="slide pic_box on" pos="1" pic="{$image|cdnurl}" big="{$image|cdnurl}">
+            <a href="javascript:;"><img src="{$image|cdnurl}" alt="iwown ECG &amp; Blood Pressure Measuring watch-H1C"><em></em></a>
+            <img src="{$image|cdnurl}" style="display:none;">
+            <img src="{$image|cdnurl}" style="display:none;">
+          </span>
+        {/volist}
+																								</div>
+		</div>	
+		<div class="products_img">
+			<ul>
+        {volist name="$__ARCHIVES__.images|explode=',',###" id="image"}
+		      <li><img src="{$image|cdnurl}"></li>
+        {/volist}
+		  </ul>
+		</div>
+					<div class="share">
+				<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_sharing_toolbox"></div>
+<script type="text/javascript" src="__CDN__/template/default2/js/addthis_widget.js?v={$site.version}" async=""></script>			</div>
+					</div>
+	<div class="info">
+		<form class="prod_info_form" name="prod_info_form" id="goods_form" action="/cart/add.html" method="post" target="_blank">
+			<h1 class="name">{$__ARCHIVES__.title}</h1>
+							<div class="number"><span>Item No:</span>{$__ARCHIVES__.itemNo}</div>
+							<div>{$__ARCHIVES__.content}</div>
+									
+			
+																					<input type="hidden" id="ProId" name="ProId" value="101">
+			<input type="hidden" id="ItemPrice" name="ItemPrice" value="" initial="" sales="0" salesprice="" discount="" old="">
+			<input type="hidden" name="Attr" id="attr_hide" value="[]">
+			<input type="hidden" name="IsBatch" id="IsBatch" value="0">
+			<input type="hidden" id="ext_attr" value="[&quot;&quot;]">
+			<input type="hidden" id="ext_combination" value="[&quot;&quot;]">
+			<input type="hidden" name="products_type" value="0">
+																		<div class="button">
+																					<a href="javascript:;" class="add_to_inquiry" data="101">Add to Inquiry</a>
+								<a href="javascript:;" class="feedback_btn">Contact Us</a>
+																				<div class="clear"></div>
+			</div>
+							<script type="text/javascript" src="__CDN__/template/default2/js/attribute_1.js?v={$site.version}"></script>
+														</form>
+	</div>
+	<div class="clear"></div>
+	<div class="description">
+	<div class="title">
+		<span class="cur">Description</span>
+							</div>
+	<div class="contents" style="display: block;">
+		<div class="global_mtitle">
+			Description		</div>
+		<div class="editor_cnt trans">
+			<div id="global_editor_contents">
+        <div style="text-align: center;">
+          {volist name="$__ARCHIVES__.cpimglist|explode=',',###" id="image"}
+          <img src="{$image|cdnurl}">
+          {/volist}
+        </div></div>
+		</div>
+	</div>
+				<div class="clear"></div>
+</div></div>
+<style>
+	.ueeshop_responsive_products_detail .info .button > a,.ueeshop_responsive_products_detail .info .button > button#addtocart_button,.product-detail .ueeshop_responsive_products_detail .info .button > a:hover{background:#fff0ee!important;}
+	.ueeshop_responsive_products_detail .info .button > a#login_addtocart_button{background: #cccccc!important;}
+	.ueeshop_responsive_products_detail .info .button > a#login_addtocart_button:hover{background: #ccc !important;}
+	.ueeshop_responsive_products_detail .info .button > button#addtocart_button,.ueeshop_responsive_products_detail .info .button > button#addtocart_button:hover{background: #f24330!important;}
+	.ueeshop_responsive_products_detail .info .button a.prod_info_pdf,.ueeshop_responsive_products_detail .info .button a.prod_info_pdf:hover, .product-detail .ueeshop_responsive_products_detail .info .button .download_button > span:hover{background: url(//ueeshop.ly200-cdn.com/static/custom/UPAS/UPAS889/images/global/pdf_download_icon2.png) #fff no-repeat center center / auto 23px!important}
+	.ueeshop_responsive_products_detail .info .button > a.add_favorite:hover,.ueeshop_responsive_products_detail .info .button > a.feedback_btn:hover{background: #fff!important;}
+</style>
+<script>
+$(document).ready(function(){
+		product_gallery();
+		// $('.ueeshop_responsive_products_detail .products_img ul').bxSlider({ 
+	// 	slideWidth:$('.ueeshop_responsive_products_detail .products_img ul').width(),
+	// 	pager:false
+	// });
+	$('.ueeshop_responsive_products_detail .title span').click(function(){
+		showthis('.ueeshop_responsive_products_detail .title span', '.ueeshop_responsive_products_detail .description>.contents', $(this).index(), 'cur');
+	});
+	$('.ueeshop_responsive_products_detail .description .contents:first').show();
+
+	$('.products_detail_module1 .prod_attr_comb .show_more').click(function (){
+		$(this).addClass('hide').parents('.prod_attr_comb').addClass('show').find('.show_less').removeClass('hide');
+	});
+	$('.products_detail_module1 .prod_attr_comb .show_less').click(function (){
+		$(this).addClass('hide').parents('.prod_attr_comb').removeClass('show').find('.show_more').removeClass('hide');
+	});
+
+	$('.products_detail_module1 .attribute .show_more').on('click', function(){
+		$('.products_detail_module1 .attribute .attribute_box').css('height', 'auto');
+		$(this).addClass('hide');
+		$('.products_detail_module1 .attribute .link.show_less').removeClass('hide');
+	});
+
+	$('.products_detail_module1 .attribute .show_less').on('click', function(){
+		var comb_height=$('.products_detail_module1 .attribute li').eq(0).outerHeight(true);
+		$('.products_detail_module1 .attribute .attribute_box').css('height', comb_height*4);
+		$(this).addClass('hide');
+		$('.products_detail_module1 .attribute .link.show_more').removeClass('hide');
+	});
+	
+	var comb_height=$('.prod_info_form .attribute .attribute_box li').eq(0).outerHeight(true);
+	$('.prod_info_form .attribute .attribute_box').css('height', comb_height*4);
+});
+</script>
+{include file="common/send_message" /}
+
+			</div>
+</div>
+
+{include file="common/foot" /}

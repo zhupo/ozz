@@ -532,33 +532,33 @@ $(function(){
 		$('#country_chzn .chzn-drop .chzn-results li').eq(d_index).click();  //
 	}
 
-	$('#lib_inquire_list form[name=inquiry], .ueeshop_responsive_products_inquiry form[name=inquiry], .ueeshop_responsive_products_inquiry_box form[name=inquiry]').submit(function(){//产品询盘提交处理
-		if(global_obj.check_form($(this).find('*[notnull]'))){return false;}
-		var e=$(this).find('input[name=Email]');
-		if(e.size()){
-			e.removeAttr('style');
-			if(e.val()!='' && (/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/.test(e.val())===false)){
-				e.css('border', '1px solid red');
-				e.focus();
-				global_obj.win_alert(lang_obj.format.email,'','sorry');
-				return false;
-			}
-		}
-		$(this).find('input:submit').attr('disabled', 'disabled');
+	// $('#lib_inquire_list form[name=inquiry], .ueeshop_responsive_products_inquiry form[name=inquiry], .ueeshop_responsive_products_inquiry_box form[name=inquiry]').submit(function(){//产品询盘提交处理
+	// 	if(global_obj.check_form($(this).find('*[notnull]'))){return false;}
+	// 	var e=$(this).find('input[name=Email]');
+	// 	if(e.size()){
+	// 		e.removeAttr('style');
+	// 		if(e.val()!='' && (/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/.test(e.val())===false)){
+	// 			e.css('border', '1px solid red');
+	// 			e.focus();
+	// 			global_obj.win_alert(lang_obj.format.email,'','sorry');
+	// 			return false;
+	// 		}
+	// 	}
+	// 	$(this).find('input:submit').attr('disabled', 'disabled');
 		
-		var _this = $(this);
-		if(global_obj.check_form($('.ueeshop_responsive_products_inquiry form[name=inquiry], #lib_inquire_list form[name=inquiry], .ueeshop_responsive_products_inquiry_box form[name=inquiry]').find('*[notnull]'))) return false;
+	// 	var _this = $(this);
+	// 	if(global_obj.check_form($('.ueeshop_responsive_products_inquiry form[name=inquiry], #lib_inquire_list form[name=inquiry], .ueeshop_responsive_products_inquiry_box form[name=inquiry]').find('*[notnull]'))) return false;
 
-		var subObj=$("#goods_form");
-		if($('.add_to_inquiry').length){
-			$.post('?do_action=action.add_inquiry', subObj.serialize()+'&ProId='+$('.add_to_inquiry').attr('data')); //产品详情页询盘 先自动添加询盘产品记录
-		}
-		if(_this.hasClass('load')) return false;
-		_this.addClass('load');
-		AjaxForm('.ueeshop_responsive_products_inquiry form[name=inquiry], #lib_inquire_list form[name=inquiry], .ueeshop_responsive_products_inquiry_box form[name=inquiry]');
-		_this.removeClass('load');
-		return false;
-	})
+	// 	var subObj=$("#goods_form");
+	// 	if($('.add_to_inquiry').length){
+	// 		$.post('?do_action=action.add_inquiry', subObj.serialize()+'&ProId='+$('.add_to_inquiry').attr('data')); //产品详情页询盘 先自动添加询盘产品记录
+	// 	}
+	// 	if(_this.hasClass('load')) return false;
+	// 	_this.addClass('load');
+	// 	AjaxForm('.ueeshop_responsive_products_inquiry form[name=inquiry], #lib_inquire_list form[name=inquiry], .ueeshop_responsive_products_inquiry_box form[name=inquiry]');
+	// 	_this.removeClass('load');
+	// 	return false;
+	// })
 
 	function AjaxForm(formID, options) {
 		var form = $(formID);
@@ -649,8 +649,8 @@ $(function(){
 	//  打开搜索框
 	$('body').on('click','.default_search',function(){
 		$search_html  = '<div id="default_search_box" class="default_search_form_style">';
-		$search_html += '	 <form action="/search/" method="get" class="default_search_form">';
-		$search_html += '		<input type="text" class="default_search_form_text" placeholder="'+ueeshop_config.search_note+'" name="Keyword" autocomplete="off" value="">';
+		$search_html += '	 <form action="Products.html" method="get" class="default_search_form">';
+		$search_html += '		<input type="text" name="title" {if !empty($v)}value="{$v}"{/if} class="default_search_form_text" placeholder="'+ueeshop_config.search_note+'" autocomplete="off">';
 		$search_html += '		<input type="submit" class="default_search_form_button" value="'+lang_obj.global.search_button+'">';
 		$search_html += '		<div class="clear"></div>';
 		$search_html += '		<i></i>';

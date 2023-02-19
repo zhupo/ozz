@@ -13,6 +13,8 @@ $(function(){
     $('#footer .footer_box .list_item .ft_item .item_title .ft_icon').click(function(){
         $(this).parents('ul').toggleClass('on');
     });
+    $(".cur-65").addClass('cur');
+    $("#cate65").addClass('show'); 
 
 
     $(".pn_item").click(function(){

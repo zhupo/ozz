@@ -1,0 +1,66 @@
+{include file="common/top" /}
+<div class="info-list wrap-module">
+    {include file="common/mbx" /} 
+	<div class="wrap menu-in-left">
+		<div class="menu-wrap-style">
+			    <div class="menu">
+        <div class="m-title">News</div>
+            {cms:channellist id="new1" cache="0" row="20" type="son" typeid="66" orderby="weigh" orderway="desc"}
+		        <h3><a href="{$new1.url}" class="category_1" title="{$new1.name}">{$new1.name}</a></h3>
+            {/cms:channellist}
+			            </div>
+		</div>
+		<div class="rightside wrap-righter-style">
+			<div class="ueeshop_responsive_info_list "> 
+        {cms:pagelist id="item"}
+        <div class="item ">
+			<div class="img"><a href="{$item.url}" title="{$item.title}"><img src="{$item.image}" alt="{$item.title}"></a></div>
+			<div class="info fr">
+				<h3 class="title"><a href="{$item.url}" title="{$item.title}">{$item.title}</a></h3>
+				<div class="time"><h1>{$item.createtime|date="M d, Y",###}</h1></div>
+				<a href="{$item.url}" title="{$item.title}" class="desc">Time: {$item.createtime|date="Y-m-d H:i:s",###}<br><br>{$item.description}</a>
+			</div>
+			<a class="link" href="{$item.url}" title="{$item.title}"></a>
+			<div class="clear"></div>
+        </div>
+        {/cms:pagelist}
+    	<div class="clear"></div>
+			<div class="ueeshop_responsive_turn_page ">{cms:pageinfo type="full" /}</div>
+	</div>		</div><!-- .rightside -->
+					<div class="rale_news">
+				<div class="news_title">
+					<div class="title fl">
+						Related&nbsp;News					</div>
+					<a href="/" class="read_btn fr">
+						Read More&nbsp;<span>&gt;&gt;</span>
+					</a>
+					<div class="clear"></div>
+				</div>
+				<div class="list">
+                            
+                    {cms:pagelist id="item1"}
+                    <div class="item">
+                        <a href="{$item1.url}" class="img middleImg" title="{$item1.title}">
+                            <img src="{$item.image}" alt="{$item1.title}" class="trans">
+                        </a>
+                        <a href="{$item1.url}" class="title trans" title="{$item1.title}">
+                            {$item1.title}								</a>
+                        <div class="time">
+                            {$item1.createtime|date="M d, Y",###}								</div>
+                        <div class="brief">
+                            Time: {$item1.createtime|date="Y-m-d H:i:s",###}<br>
+<br>
+{$item1.description}								</div>
+                    </div>
+                    {/cms:pagelist}
+            </div>
+			</div>
+			</div>
+</div>
+
+
+ 
+{include file="common/foot" /}
+
+
+ 

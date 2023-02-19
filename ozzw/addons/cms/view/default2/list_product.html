@@ -1,0 +1,62 @@
+{include file="common/top" /}
+{include file="common/mbx" /} 
+
+<script type="text/javascript" src="__CDN__/template/default2/js/jquery.bxslider.js?v={$site.version}"></script>
+<link href="__CDN__/template/default2/css/jquery.bxslider.css?v={$site.version}" rel="stylesheet" type="text/css">	
+<div class="product-list products wrap-module">
+<div class="pro_list">
+	<div class="wrap">
+		<div class="text-center cate-name">
+			<a href="/products/">Products</a>
+			<span></span>
+		</div>
+						<div class="contenter wrap-righter-style">
+			<div class="ueeshop_responsive_products_filter_mb ueeshop_responsive_products_filter_ns">
+</div>
+
+<div class="ueeshop_responsive_products_list ">
+{cms:pagelist id="item" addon="content"}
+<div class="item">
+	<div class="pro">
+		<div class="img pic_box">
+			<a href="{$item.url}" target="_blank" title="{$item.title}">
+			<img data-src="{$item.image}" class="trans5 delay loading_img" alt="{$item.title}"><em></em>
+			</a>
+		</div>
+		<div class="info">
+			<h3 class="name"><a href="{$item.url}" title="{$item.title}" target="_blank">{$item.title}</a></h3>
+								<a href="{$item.url}" target="_blank" title="{$item.title}" class="more">View More</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div class="img_list pro_img_list">
+					</div>
+</div>
+{/cms:pagelist}
+<div class="clear"></div>
+	<div class="ueeshop_responsive_turn_page ">
+			{cms:pageinfo type="full" /}
+	</div>
+</div>
+</div>
+		<div class="hot_cate">
+			<div class="page_name">
+				Hot Products					</div>
+			<div class="list slider">
+						{cms:channellist id="son" type="son" typeid="44" cache="0" row="20"}
+						{cms:arclist id="itemHot" channel="son.id" flag="hot"  orderby="weigh" orderway="desc" row="20" addon="content"}}
+							<div class="row slide">
+								<a class="img" href="{$itemHot.url}"><img class="trans loading_img" data-src="{$itemHot.image}" alt=""></a>
+								<div class="row_txt">
+									<a class="name trans" href="{$itemHot.url}">{$itemHot.title}</a>
+								</div>
+								<div class="clear"></div>
+							</div>
+						{/cms:arclist}
+						{/cms:channellist}
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+{include file="common/foot" /}

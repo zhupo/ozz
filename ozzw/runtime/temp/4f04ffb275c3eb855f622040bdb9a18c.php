@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:76:"/Users/panliu/Documents/project/ozz/ozzw/addons/cms/view/default1/index.html";i:1669554324;s:81:"/Users/panliu/Documents/project/ozz/ozzw/addons/cms/view/default1/common/top.html";i:1676041756;s:82:"/Users/panliu/Documents/project/ozz/ozzw/addons/cms/view/default1/common/foot.html";i:1669543029;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:3:{s:76:"/Users/panliu/Documents/project/ozz/ozzw/addons/cms/view/default1/index.html";i:1669554324;s:81:"/Users/panliu/Documents/project/ozz/ozzw/addons/cms/view/default1/common/top.html";i:1676041756;s:82:"/Users/panliu/Documents/project/ozz/ozzw/addons/cms/view/default1/common/foot.html";i:1676704257;}*/ ?>
 <!DOCTYPE html>
 <head>
     
@@ -36,9 +36,9 @@
         <div class="box indexhead">
                 <div class="indexheadL">Welcome to <?php echo $site['name']; ?></div>
                 <div class="indexheaR">
-               <?php $__uvzb1mHVGJ__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"contact","orderby"=>"weigh","orderway"=>"desc","condition"=>"1=foottop"]); if(is_array($__uvzb1mHVGJ__) || $__uvzb1mHVGJ__ instanceof \think\Collection || $__uvzb1mHVGJ__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__uvzb1mHVGJ__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
+               <?php $__L0iKdlV8wf__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"contact","orderby"=>"weigh","orderway"=>"desc","condition"=>"1=foottop"]); if(is_array($__L0iKdlV8wf__) || $__L0iKdlV8wf__ instanceof \think\Collection || $__L0iKdlV8wf__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__L0iKdlV8wf__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
                     <p><a href="<?php echo $block['url']; ?>" title=""><span><i class="ico <?php echo $block['image']; ?>"></i></span> <?php echo $block['title']; ?> : <?php echo str_replace(["<p>","</p>"], "", $block['content']); ?></a></p>
-               <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__uvzb1mHVGJ__; ?>
+               <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__L0iKdlV8wf__; ?>
                </div>
         </div>
     </div>
@@ -53,37 +53,37 @@
         <div class="indexNavNrRight">
         <div class="navA">   
             <ul class="qc" id="nav">
-            <?php $__hrEYs4Clqv__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20"]); if(is_array($__hrEYs4Clqv__) || $__hrEYs4Clqv__ instanceof \think\Collection || $__hrEYs4Clqv__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__hrEYs4Clqv__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
+            <?php $__xDl1rcu83t__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20"]); if(is_array($__xDl1rcu83t__) || $__xDl1rcu83t__ instanceof \think\Collection || $__xDl1rcu83t__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__xDl1rcu83t__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
                 <li>
                     <a class="<?php if($nav->is_active): ?>this<?php endif; ?>" <?php if($nav['href'] == 0): ?>href="<?php echo $nav['url']; ?>"<?php endif; if($nav['target'] == 1): ?>target="_blank"<?php endif; ?>><?php echo $nav['name']; ?></a>
                     <?php if($nav['has_child']): ?>
                     <ul>
                        
-                        <?php $__gXdSfaThni__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__gXdSfaThni__) || $__gXdSfaThni__ instanceof \think\Collection || $__gXdSfaThni__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__gXdSfaThni__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
+                        <?php $__dE4wYSVRHx__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__dE4wYSVRHx__) || $__dE4wYSVRHx__ instanceof \think\Collection || $__dE4wYSVRHx__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__dE4wYSVRHx__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
                         <li><a  href="<?php echo $navshow['url']; ?>" title="<?php echo $navshow['title']; ?>"><?php echo $navshow['title']; ?></a></li>
-                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__gXdSfaThni__; $__GLkQw7jYzA__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","condition"=>"1=isnav","typeid"=>$nav['id'],"cache"=>"0","row"=>"20"]); if(is_array($__GLkQw7jYzA__) || $__GLkQw7jYzA__ instanceof \think\Collection || $__GLkQw7jYzA__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__GLkQw7jYzA__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
+                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__dE4wYSVRHx__; $__UWDvZlVXtH__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","condition"=>"1=isnav","typeid"=>$nav['id'],"cache"=>"0","row"=>"20"]); if(is_array($__UWDvZlVXtH__) || $__UWDvZlVXtH__ instanceof \think\Collection || $__UWDvZlVXtH__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__UWDvZlVXtH__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
                            
                             <li><a class="<?php if($son->is_active): ?>this<?php endif; ?>" <?php if($son['href'] == 0): ?>href="<?php echo $son['url']; ?>"<?php endif; ?>><?php echo $son['name']; ?></a>
                                  <?php if($son['has_child']): ?>
                                  <ul>
-                                    <?php $__3m6kOWnY2q__ = \addons\cms\model\Channel::getChannelList(["id"=>"sons","condition"=>"1=isnav","type"=>"son","typeid"=>$son['id'],"cache"=>"0"]); if(is_array($__3m6kOWnY2q__) || $__3m6kOWnY2q__ instanceof \think\Collection || $__3m6kOWnY2q__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__3m6kOWnY2q__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sons): $mod = ($i % 2 );++$i;?>
+                                    <?php $__0rnMO9qUiA__ = \addons\cms\model\Channel::getChannelList(["id"=>"sons","condition"=>"1=isnav","type"=>"son","typeid"=>$son['id'],"cache"=>"0"]); if(is_array($__0rnMO9qUiA__) || $__0rnMO9qUiA__ instanceof \think\Collection || $__0rnMO9qUiA__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__0rnMO9qUiA__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sons): $mod = ($i % 2 );++$i;?>
                                     <li><a class="<?php if($sons->is_active): ?>this<?php endif; ?>"  href="<?php echo $sons['url']; ?>"><?php echo $sons['name']; ?></a></li>
-                                    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__3m6kOWnY2q__; ?>
+                                    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__0rnMO9qUiA__; ?>
                                 </ul>
                                 <?php endif; ?>
                             </li>
                            
-                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__GLkQw7jYzA__; ?>
+                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__UWDvZlVXtH__; ?>
                     </ul>
                     <?php else: ?>
                     <ul>
-                        <?php $__K75WbDCenc__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__K75WbDCenc__) || $__K75WbDCenc__ instanceof \think\Collection || $__K75WbDCenc__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__K75WbDCenc__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
+                        <?php $__C2clOwEm5d__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__C2clOwEm5d__) || $__C2clOwEm5d__ instanceof \think\Collection || $__C2clOwEm5d__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__C2clOwEm5d__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
                         <li><a href="<?php echo $navshow['url']; ?>" title="<?php echo $navshow['title']; ?>"><?php echo $navshow['title']; ?></a></li>
-                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__K75WbDCenc__; ?>
+                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__C2clOwEm5d__; ?>
                     </ul>
                    <?php endif; ?>
                </li>
-            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__hrEYs4Clqv__; ?>
+            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__xDl1rcu83t__; ?>
             </ul>
         </div> 
         
@@ -155,9 +155,9 @@
                  <div class="headEr">
                         <i class="ico icon-dianhua5"></i>
                         <p>
-                            <?php $__5OxeiQvVwb__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"contact","orderby"=>"weigh","orderway"=>"desc","condition"=>"1=foottop"]); if(is_array($__5OxeiQvVwb__) || $__5OxeiQvVwb__ instanceof \think\Collection || $__5OxeiQvVwb__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__5OxeiQvVwb__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
+                            <?php $__CZ4VGaTX1B__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"contact","orderby"=>"weigh","orderway"=>"desc","condition"=>"1=foottop"]); if(is_array($__CZ4VGaTX1B__) || $__CZ4VGaTX1B__ instanceof \think\Collection || $__CZ4VGaTX1B__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__CZ4VGaTX1B__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
                             <a><?php echo $block['title']; ?> : <?php echo str_replace(["<p>","</p>"], "", $block['content']); ?></a>
-                            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__5OxeiQvVwb__; ?>
+                            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__CZ4VGaTX1B__; ?>
                         </p>
                      
                
@@ -171,37 +171,37 @@
  <div class="indexNavNrC">
    <div class="box indexNavNrCBox">
     <ul class="qc" id="navC">
-    <?php $__XvpgnP81UB__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20"]); if(is_array($__XvpgnP81UB__) || $__XvpgnP81UB__ instanceof \think\Collection || $__XvpgnP81UB__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__XvpgnP81UB__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
+    <?php $__K5uOdbRGIP__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20"]); if(is_array($__K5uOdbRGIP__) || $__K5uOdbRGIP__ instanceof \think\Collection || $__K5uOdbRGIP__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__K5uOdbRGIP__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
         <li>
             <a class="<?php if($nav->is_active): ?>this<?php endif; ?>" <?php if($nav['href'] == 0): ?>href="<?php echo $nav['url']; ?>"<?php endif; ?>><?php echo $nav['name']; ?></a>
             <?php if($nav['has_child']): ?>
             <ul>
                
-                <?php $__KLyB5PAJhM__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__KLyB5PAJhM__) || $__KLyB5PAJhM__ instanceof \think\Collection || $__KLyB5PAJhM__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__KLyB5PAJhM__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
+                <?php $__fyCEGOpL0u__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__fyCEGOpL0u__) || $__fyCEGOpL0u__ instanceof \think\Collection || $__fyCEGOpL0u__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__fyCEGOpL0u__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
                 <li><a href="<?php echo $navshow['url']; ?>" title="<?php echo $navshow['title']; ?>"><?php echo $navshow['title']; ?></a></li>
-                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__KLyB5PAJhM__; $__9nxuHFMGkY__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","condition"=>"1=isnav","typeid"=>$nav['id'],"cache"=>"0","row"=>"20"]); if(is_array($__9nxuHFMGkY__) || $__9nxuHFMGkY__ instanceof \think\Collection || $__9nxuHFMGkY__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__9nxuHFMGkY__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
+                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__fyCEGOpL0u__; $__JO1lHWsXQU__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","condition"=>"1=isnav","typeid"=>$nav['id'],"cache"=>"0","row"=>"20"]); if(is_array($__JO1lHWsXQU__) || $__JO1lHWsXQU__ instanceof \think\Collection || $__JO1lHWsXQU__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__JO1lHWsXQU__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
                    
                     <li><a class="<?php if($son->is_active): ?>this<?php endif; ?>"  <?php if($son['href'] == 0): ?>href="<?php echo $son['url']; ?>"<?php endif; ?>><?php echo $son['name']; ?></a>
                          <?php if($son['has_child']): ?>
                          <ul>
-                            <?php $__lC9L1EhOgx__ = \addons\cms\model\Channel::getChannelList(["id"=>"sons","condition"=>"1=isnav","type"=>"son","typeid"=>$son['id'],"cache"=>"0","row"=>"20"]); if(is_array($__lC9L1EhOgx__) || $__lC9L1EhOgx__ instanceof \think\Collection || $__lC9L1EhOgx__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__lC9L1EhOgx__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sons): $mod = ($i % 2 );++$i;?>
+                            <?php $__TVuB0EDGNq__ = \addons\cms\model\Channel::getChannelList(["id"=>"sons","condition"=>"1=isnav","type"=>"son","typeid"=>$son['id'],"cache"=>"0","row"=>"20"]); if(is_array($__TVuB0EDGNq__) || $__TVuB0EDGNq__ instanceof \think\Collection || $__TVuB0EDGNq__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__TVuB0EDGNq__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sons): $mod = ($i % 2 );++$i;?>
                             <li><a class="<?php if($sons->is_active): ?>this<?php endif; ?>"  href="<?php echo $sons['url']; ?>"><?php echo $sons['name']; ?></a></li>
-                            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__lC9L1EhOgx__; ?>
+                            <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__TVuB0EDGNq__; ?>
                         </ul>
                         <?php endif; ?>
                     </li>
                    
-                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__9nxuHFMGkY__; ?>
+                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__JO1lHWsXQU__; ?>
             </ul>
             <?php else: ?>
             <ul>
-                <?php $__GHtk5Zl6q9__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__GHtk5Zl6q9__) || $__GHtk5Zl6q9__ instanceof \think\Collection || $__GHtk5Zl6q9__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__GHtk5Zl6q9__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
+                <?php $__6WZ0QBfL9H__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__6WZ0QBfL9H__) || $__6WZ0QBfL9H__ instanceof \think\Collection || $__6WZ0QBfL9H__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__6WZ0QBfL9H__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
                 <li><a  href="<?php echo $navshow['url']; ?>" title="<?php echo $navshow['title']; ?>"><?php echo $navshow['title']; ?></a></li>
-                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__GHtk5Zl6q9__; ?>
+                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__6WZ0QBfL9H__; ?>
             </ul>
            <?php endif; ?>
         </li>
-    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__XvpgnP81UB__; ?>
+    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__K5uOdbRGIP__; ?>
     </ul>
  
   
@@ -227,38 +227,38 @@
 </div>
 <div class='WapNav'>
     <ul class="qc">
-    <?php $__f0Jq69jcnE__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20"]); if(is_array($__f0Jq69jcnE__) || $__f0Jq69jcnE__ instanceof \think\Collection || $__f0Jq69jcnE__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__f0Jq69jcnE__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
+    <?php $__A1CLITxNi3__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","cache"=>"0","condition"=>"1=isnav","row"=>"20"]); if(is_array($__A1CLITxNi3__) || $__A1CLITxNi3__ instanceof \think\Collection || $__A1CLITxNi3__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__A1CLITxNi3__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
         <li>
             <a class="<?php if($nav->is_active): ?>this<?php endif; ?>" <?php if($nav['href'] == 0): ?>href="<?php echo $nav['url']; ?>"<?php endif; if($nav['target'] == 1): ?>target="_blank"<?php endif; ?>><?php echo $nav['name']; ?></a>
             <?php if($nav['has_child']): ?>
             <ul>
-                <?php $__kHU7y9mN1e__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__kHU7y9mN1e__) || $__kHU7y9mN1e__ instanceof \think\Collection || $__kHU7y9mN1e__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__kHU7y9mN1e__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
+                <?php $__c3FgRdDSEV__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__c3FgRdDSEV__) || $__c3FgRdDSEV__ instanceof \think\Collection || $__c3FgRdDSEV__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__c3FgRdDSEV__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
                 <li><a href="<?php echo $navshow['url']; ?>" title="<?php echo $navshow['title']; ?>"><?php echo $navshow['title']; ?></a></li>
-                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__kHU7y9mN1e__; $__a796cVlIHF__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","typeid"=>$nav['id'],"cache"=>"0","condition"=>"1=isnav","row"=>"20"]); if(is_array($__a796cVlIHF__) || $__a796cVlIHF__ instanceof \think\Collection || $__a796cVlIHF__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__a796cVlIHF__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
+                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__c3FgRdDSEV__; $__vR89LAKz3C__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","typeid"=>$nav['id'],"cache"=>"0","condition"=>"1=isnav","row"=>"20"]); if(is_array($__vR89LAKz3C__) || $__vR89LAKz3C__ instanceof \think\Collection || $__vR89LAKz3C__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__vR89LAKz3C__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;?>
                
                 <li><a class="<?php if($son->is_active): ?>this<?php endif; ?>"  <?php if($son['href'] == 0): ?>href="<?php echo $son['url']; ?>"<?php endif; ?>><?php echo $son['name']; ?></a>
                     <?php if($son['has_child']): ?>
                     <ul>
-                        <?php $__7yRQPhSXHu__ = \addons\cms\model\Channel::getChannelList(["id"=>"sons","type"=>"son","typeid"=>$son['id'],"cache"=>"0","condition"=>"1=isnav","row"=>"20"]); if(is_array($__7yRQPhSXHu__) || $__7yRQPhSXHu__ instanceof \think\Collection || $__7yRQPhSXHu__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__7yRQPhSXHu__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sons): $mod = ($i % 2 );++$i;?>
+                        <?php $__ZfeF93tOMJ__ = \addons\cms\model\Channel::getChannelList(["id"=>"sons","type"=>"son","typeid"=>$son['id'],"cache"=>"0","condition"=>"1=isnav","row"=>"20"]); if(is_array($__ZfeF93tOMJ__) || $__ZfeF93tOMJ__ instanceof \think\Collection || $__ZfeF93tOMJ__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__ZfeF93tOMJ__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$sons): $mod = ($i % 2 );++$i;?>
                         <li><a class="<?php if($sons->is_active): ?>this<?php endif; ?>"  href="<?php echo $sons['url']; ?>"><?php echo $sons['name']; ?></a></li>
-                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__7yRQPhSXHu__; ?>
+                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__ZfeF93tOMJ__; ?>
                     </ul>
                     <?php endif; ?>
                 </li>
                
-                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__a796cVlIHF__; ?>
+                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__vR89LAKz3C__; ?>
                
             </ul>
              <?php else: ?>
             <ul>
-                <?php $__8qCadFjMTW__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__8qCadFjMTW__) || $__8qCadFjMTW__ instanceof \think\Collection || $__8qCadFjMTW__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__8qCadFjMTW__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
+                <?php $__sO9L7jBvZg__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>$nav['id'],"orderby"=>"weigh","orderway"=>"desc","flag"=>"top","row"=>"20"]); if(is_array($__sO9L7jBvZg__) || $__sO9L7jBvZg__ instanceof \think\Collection || $__sO9L7jBvZg__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__sO9L7jBvZg__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
                 <li><a href="<?php echo $navshow['url']; ?>" title="<?php echo $navshow['title']; ?>"><?php echo $navshow['title']; ?></a></li>
-                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__8qCadFjMTW__; ?>
+                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__sO9L7jBvZg__; ?>
             </ul>
             
             <?php endif; ?>
         </li>
-    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__f0Jq69jcnE__; ?>
+    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__A1CLITxNi3__; ?>
     </ul> 
     <?php if(in_array(($site['sousuo']), explode(',',"1"))): ?>  
     <div class="sousuonr">
@@ -295,7 +295,7 @@
 <!-- wapNav -->
 <div class="swiper-container" id="indexBanner">
       <div class="swiper-wrapper">
-        <?php $__2d0WNe5trR__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"banner","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__2d0WNe5trR__) || $__2d0WNe5trR__ instanceof \think\Collection || $__2d0WNe5trR__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__2d0WNe5trR__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?>   
+        <?php $__uEO7tvfVPJ__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"banner","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__uEO7tvfVPJ__) || $__uEO7tvfVPJ__ instanceof \think\Collection || $__uEO7tvfVPJ__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__uEO7tvfVPJ__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?>   
         <div class="swiper-slide">
 	        <div class="banner">
              	<div class="bannerTxt box"<?php switch($block['lr']): case "1": ?>style="text-align:left;"<?php break; case "2": ?>style="text-align:center;"<?php break; case "3": ?>style="text-align:right;"<?php break; endswitch; ?>>
@@ -307,7 +307,7 @@
              	<i class="ico icon-zuo-copy"></i>
             </div>
 	    </div>
-	    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__2d0WNe5trR__; ?> 
+	    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__uEO7tvfVPJ__; ?> 
 	    
 	   
 	  </div>
@@ -360,13 +360,13 @@
 <?php if(in_array(($site['indexcp']), explode(',',"1"))): ?>     
 <div class="IndexProduct">
     <div class="IndexProductNr">
-       <?php $__FlfE7sOxzP__ = \addons\cms\model\Channel::getChannelList(["id"=>"channel","typeid"=>"44","row"=>"20","type"=>"son","condition"=>"0=cpindex"]); if(is_array($__FlfE7sOxzP__) || $__FlfE7sOxzP__ instanceof \think\Collection || $__FlfE7sOxzP__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__FlfE7sOxzP__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$channel): $mod = ($i % 2 );++$i;?>
+       <?php $__XzlIfVRPKw__ = \addons\cms\model\Channel::getChannelList(["id"=>"channel","typeid"=>"44","row"=>"20","type"=>"son","condition"=>"0=cpindex"]); if(is_array($__XzlIfVRPKw__) || $__XzlIfVRPKw__ instanceof \think\Collection || $__XzlIfVRPKw__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__XzlIfVRPKw__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$channel): $mod = ($i % 2 );++$i;?>
        <dl class="box">
             <dt><em><?php echo $channel['name']; ?></em>  <a href="<?php echo $channel['url']; ?>">More</a></dt>
             <?php if($channel['has_child']): ?>
              <dd>
                 <ul>
-                    <?php $__axpySEULQ3__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","typeid"=>$channel['id'],"cache"=>"0","row"=>"20","condition"=>"0=cpindex"]); if(is_array($__axpySEULQ3__) || $__axpySEULQ3__ instanceof \think\Collection || $__axpySEULQ3__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__axpySEULQ3__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;$__k5z9qL3nMI__ = \addons\cms\model\Archives::getArchivesList(["id"=>"item","flag"=>"index","row"=>"10","orderby"=>"rand","channel"=>$son['id']]); if(is_array($__k5z9qL3nMI__) || $__k5z9qL3nMI__ instanceof \think\Collection || $__k5z9qL3nMI__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__k5z9qL3nMI__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?> 
+                    <?php $__iN9IXdhrJ4__ = \addons\cms\model\Channel::getChannelList(["id"=>"son","type"=>"son","typeid"=>$channel['id'],"cache"=>"0","row"=>"20","condition"=>"0=cpindex"]); if(is_array($__iN9IXdhrJ4__) || $__iN9IXdhrJ4__ instanceof \think\Collection || $__iN9IXdhrJ4__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__iN9IXdhrJ4__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$son): $mod = ($i % 2 );++$i;$__NyCsurwKcF__ = \addons\cms\model\Archives::getArchivesList(["id"=>"item","flag"=>"index","row"=>"10","orderby"=>"rand","channel"=>$son['id']]); if(is_array($__NyCsurwKcF__) || $__NyCsurwKcF__ instanceof \think\Collection || $__NyCsurwKcF__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__NyCsurwKcF__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?> 
                     <li>
                         <a href="<?php echo $item['url']; ?>">
                           <div class="imghover"><img src="<?php echo $item['image']; ?>"></div>
@@ -377,14 +377,14 @@
                           </div>    
                         </a>
                     </li>
-                    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__k5z9qL3nMI__; endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__axpySEULQ3__; ?>
+                    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__NyCsurwKcF__; endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__iN9IXdhrJ4__; ?>
                 </ul>
             </dd>
             <?php else: ?>
             <dd>
                 <ul>
                     
-                    <?php $__QISv9c23Zz__ = \addons\cms\model\Archives::getArchivesList(["id"=>"item","flag"=>"index","row"=>"4","orderby"=>"rand","channel"=>$channel['id']]); if(is_array($__QISv9c23Zz__) || $__QISv9c23Zz__ instanceof \think\Collection || $__QISv9c23Zz__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__QISv9c23Zz__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?> 
+                    <?php $__RkOPqfsI56__ = \addons\cms\model\Archives::getArchivesList(["id"=>"item","flag"=>"index","row"=>"4","orderby"=>"rand","channel"=>$channel['id']]); if(is_array($__RkOPqfsI56__) || $__RkOPqfsI56__ instanceof \think\Collection || $__RkOPqfsI56__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__RkOPqfsI56__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$item): $mod = ($i % 2 );++$i;?> 
                     <li>
                         <a href="<?php echo $item['url']; ?>">
                           <div class="imghover"><img src="<?php echo $item['image']; ?>"></div>
@@ -395,13 +395,13 @@
                           </div>    
                         </a>
                     </li>
-                    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__QISv9c23Zz__; ?>
+                    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__RkOPqfsI56__; ?>
                     
                 </ul>
             </dd>
             <?php endif; ?>
         </dl>
-        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__FlfE7sOxzP__; ?>
+        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__XzlIfVRPKw__; ?>
         
     </div>
 </div>
@@ -409,7 +409,7 @@
 
 
 <!--首页叠加开始--> 
-<?php $__cwVlzvYyGd__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"index","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__cwVlzvYyGd__) || $__cwVlzvYyGd__ instanceof \think\Collection || $__cwVlzvYyGd__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__cwVlzvYyGd__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;if(in_array(($block['ys']), explode(',',"1"))): ?>
+<?php $__aEn5icqvrj__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"index","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__aEn5icqvrj__) || $__aEn5icqvrj__ instanceof \think\Collection || $__aEn5icqvrj__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__aEn5icqvrj__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;if(in_array(($block['ys']), explode(',',"1"))): ?>
 <!--编辑器-->
 <div class="indexBJQ">
     <div class="box BJQ"><?php echo $block['content']; ?></div>
@@ -493,7 +493,7 @@
         </ul>
         <?php endif; if(!(empty($block['url']) || (($block['url'] instanceof \think\Collection || $block['url'] instanceof \think\Paginator ) && $block['url']->isEmpty()))): ?><a class="indexFa" href="<?php echo $block['url']; ?>"><?php echo $block['title']; ?></a><?php endif; ?> 
  </div>
-<?php endif; endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__cwVlzvYyGd__; ?> 
+<?php endif; endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__aEn5icqvrj__; ?> 
 <!--首页叠加结束-->
 
 
@@ -550,32 +550,32 @@
             	<!--一级菜单 -->
             	<div class="footAB">
         	    <h4>Quick link</h4>
-        	    <?php $__O47d1jo9nC__ = \addons\cms\model\Channel::getChannelList(["id"=>"channel","type"=>"son","condition"=>"1=isnav AND 0=nofoot"]); if(is_array($__O47d1jo9nC__) || $__O47d1jo9nC__ instanceof \think\Collection || $__O47d1jo9nC__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__O47d1jo9nC__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$channel): $mod = ($i % 2 );++$i;?>
+        	    <?php $__ghEI3PJv6M__ = \addons\cms\model\Channel::getChannelList(["id"=>"channel","type"=>"son","condition"=>"1=isnav AND 0=nofoot"]); if(is_array($__ghEI3PJv6M__) || $__ghEI3PJv6M__ instanceof \think\Collection || $__ghEI3PJv6M__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__ghEI3PJv6M__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$channel): $mod = ($i % 2 );++$i;?>
                 <a href="<?php echo $channel['url']; ?>" title="<?php echo $channel['name']; ?>"><?php echo $channel['name']; ?></a>
-                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__O47d1jo9nC__; ?>
+                <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__ghEI3PJv6M__; ?>
               	</div>
               	
               	
               	
-                 <?php if(in_array(($site['indexcp']), explode(',',"1"))): $__VHwmhTLGoj__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","condition"=>"1=isnav AND 0=nofoot","cache"=>"0","model"=>"2"]); if(is_array($__VHwmhTLGoj__) || $__VHwmhTLGoj__ instanceof \think\Collection || $__VHwmhTLGoj__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__VHwmhTLGoj__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
+                 <?php if(in_array(($site['indexcp']), explode(',',"1"))): $__m6JiZVR8Ta__ = \addons\cms\model\Channel::getChannelList(["id"=>"nav","type"=>"top","condition"=>"1=isnav AND 0=nofoot","cache"=>"0","model"=>"2"]); if(is_array($__m6JiZVR8Ta__) || $__m6JiZVR8Ta__ instanceof \think\Collection || $__m6JiZVR8Ta__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__m6JiZVR8Ta__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$nav): $mod = ($i % 2 );++$i;?>
                   	<div class="footAB">
             	    <h4><?php echo $nav['name']; ?></h4>
-            	        <?php $__SclEnKXTBZ__ = \addons\cms\model\Channel::getChannelList(["id"=>"channel","type"=>"son","typeid"=>$nav['id'],"cache"=>"0","condition"=>"1=isnav AND 0=nofoot"]); if(is_array($__SclEnKXTBZ__) || $__SclEnKXTBZ__ instanceof \think\Collection || $__SclEnKXTBZ__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__SclEnKXTBZ__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$channel): $mod = ($i % 2 );++$i;?>
+            	        <?php $__TRN5cZEBa4__ = \addons\cms\model\Channel::getChannelList(["id"=>"channel","type"=>"son","typeid"=>$nav['id'],"cache"=>"0","condition"=>"1=isnav AND 0=nofoot"]); if(is_array($__TRN5cZEBa4__) || $__TRN5cZEBa4__ instanceof \think\Collection || $__TRN5cZEBa4__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__TRN5cZEBa4__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$channel): $mod = ($i % 2 );++$i;?>
                         <a href="<?php echo $channel['url']; ?>" title="<?php echo $channel['name']; ?>"><?php echo $channel['name']; ?></a>
-                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__SclEnKXTBZ__; ?>
+                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__TRN5cZEBa4__; ?>
                     </div>
-                  	<?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__VHwmhTLGoj__; endif; if(in_array(($site['indexfw']), explode(',',"1"))): ?> 
+                  	<?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__m6JiZVR8Ta__; endif; if(in_array(($site['indexfw']), explode(',',"1"))): ?> 
             	    <!--服务二级菜单-->
             	    <div class="footAD">
             	    <h4>Services</h4>
-            	    <?php $__vi7CIeAhcS__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>"38","orderby"=>"weigh","orderway"=>"desc","flag"=>"top"]); if(is_array($__vi7CIeAhcS__) || $__vi7CIeAhcS__ instanceof \think\Collection || $__vi7CIeAhcS__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__vi7CIeAhcS__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
+            	    <?php $__S7MDIkOcg6__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>"38","orderby"=>"weigh","orderway"=>"desc","flag"=>"top"]); if(is_array($__S7MDIkOcg6__) || $__S7MDIkOcg6__ instanceof \think\Collection || $__S7MDIkOcg6__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__S7MDIkOcg6__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
                           <a href="<?php echo $navshow['url']; ?>" title="<?php echo $navshow['title']; ?>"><?php echo $navshow['title']; ?></a>
-                    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__vi7CIeAhcS__; if(in_array(($site['indexfdc']), explode(',',"1"))): ?>   
+                    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__S7MDIkOcg6__; if(in_array(($site['indexfdc']), explode(',',"1"))): ?>   
                         <!--项目-->
                 	    <div class="footABNr">
-                        <?php $__fjp3UvF60l__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>"51","orderby"=>"weigh","orderway"=>"desc","flag"=>"top"]); if(is_array($__fjp3UvF60l__) || $__fjp3UvF60l__ instanceof \think\Collection || $__fjp3UvF60l__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__fjp3UvF60l__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
+                        <?php $__PkER4jedLN__ = \addons\cms\model\Archives::getArchivesList(["id"=>"navshow","channel"=>"51","orderby"=>"weigh","orderway"=>"desc","flag"=>"top"]); if(is_array($__PkER4jedLN__) || $__PkER4jedLN__ instanceof \think\Collection || $__PkER4jedLN__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__PkER4jedLN__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$navshow): $mod = ($i % 2 );++$i;?>
                               <a href="<?php echo $navshow['url']; ?>" title="<?php echo $navshow['title']; ?>"><img src="<?php echo $navshow['image']; ?>"><h3><?php echo $navshow['title']; ?></h3></a>
-                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__fjp3UvF60l__; ?>
+                        <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__PkER4jedLN__; ?>
                 		</div> 
                 	<?php endif; ?>	
                 	</div>
@@ -586,9 +586,9 @@
             	<div class="footAC">
                     <h4>Contact Us</h4>
                     <ul>
-                    <?php $__d2KHb1h8uf__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"contact","orderby"=>"weigh","orderway"=>"desc","condition"=>"1=sf"]); if(is_array($__d2KHb1h8uf__) || $__d2KHb1h8uf__ instanceof \think\Collection || $__d2KHb1h8uf__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__d2KHb1h8uf__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
+                    <?php $__ZiIv6K9AME__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"contact","orderby"=>"weigh","orderway"=>"desc","condition"=>"1=sf"]); if(is_array($__ZiIv6K9AME__) || $__ZiIv6K9AME__ instanceof \think\Collection || $__ZiIv6K9AME__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__ZiIv6K9AME__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
                     <li><span><i class="ico <?php echo $block['image']; ?>"></i></span><p><a href="<?php echo $block['url']; ?>" title=""><?php echo $block['title']; ?> : <?php echo str_replace(["<p>","</p>"], "", $block['content']); ?></a></p></li>
-                    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__d2KHb1h8uf__; ?>
+                    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__ZiIv6K9AME__; ?>
                     </ul>
                 </div>
                  
@@ -598,17 +598,17 @@
           <!--版权-->
           <div class="copyright">
             <div class="box">
-                  <?php $__CocfjQONy4__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"zf","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__CocfjQONy4__) || $__CocfjQONy4__ instanceof \think\Collection || $__CocfjQONy4__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__CocfjQONy4__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
+                  <?php $__UB5mzde4Mu__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"zf","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__UB5mzde4Mu__) || $__UB5mzde4Mu__ instanceof \think\Collection || $__UB5mzde4Mu__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__UB5mzde4Mu__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?> 
                   <div class="copyrightRight">
                         <?php if(is_array(explode(',',$block['images'])) || explode(',',$block['images']) instanceof \think\Collection || explode(',',$block['images']) instanceof \think\Paginator): $i = 0; $__LIST__ = explode(',',$block['images']);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$image): $mod = ($i % 2 );++$i;?>
                          <a><img src="<?php echo cdnurl($image); ?>"></a>   
                         <?php endforeach; endif; else: echo "" ;endif; ?>
                   </div>
-                  <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__CocfjQONy4__; ?>  
+                  <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__UB5mzde4Mu__; ?>  
                 <div class="shemei">
-    			    <?php $__eGPCXSpwjm__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"sm","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__eGPCXSpwjm__) || $__eGPCXSpwjm__ instanceof \think\Collection || $__eGPCXSpwjm__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__eGPCXSpwjm__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?>
+    			    <?php $__yckK3Z0Ggf__ = \addons\cms\model\Block::getBlockList(["id"=>"block","name"=>"sm","orderby"=>"weigh","orderway"=>"desc"]); if(is_array($__yckK3Z0Ggf__) || $__yckK3Z0Ggf__ instanceof \think\Collection || $__yckK3Z0Ggf__ instanceof \think\Paginator): $i = 0; $__LIST__ = $__yckK3Z0Ggf__;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$block): $mod = ($i % 2 );++$i;?>
     				<a href="<?php echo $block['url']; ?>" title="<?php echo $block['title']; ?>" target="_blank"><i class="ico <?php echo $block['image']; ?>"></i></a>
-    			    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__eGPCXSpwjm__; ?> 
+    			    <?php endforeach; endif; else: echo "" ;endif; $__LASTLIST__=$__yckK3Z0Ggf__; ?> 
 			    </div>
             </div>
           </div>

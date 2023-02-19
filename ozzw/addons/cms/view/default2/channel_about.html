@@ -1,0 +1,114 @@
+{include file="common/top" /}
+{include file="common/mbx" /}
+<div class="wrap menu-in-left">
+<div class="contenter">
+<div class="ueeshop_responsive_article_detail  content-100">
+<div id="global_editor_contents" class="contents">
+<div class="detail_module_5">
+<div class="text_content">
+<div class="text_park">
+<div class="center_text_title">&nbsp;</div>
+
+
+{cms:blocklist id="block" name="about" orderby="weigh" orderway="desc" } 
+<div class="center_con_p" style="text-align: left;"><span style="font-size:16px;"><span style="font-family:quattrocentosans-regular;">
+	{$block.content}
+</span></span></div>
+{/cms:blocklist}
+</div>
+</div>
+
+<div class="item_box">
+{cms:blocklist id="block" name="about-image" orderby="weigh" orderway="desc" } 
+{notempty name="$block.images"}
+          {volist name="$block.images|explode=',',###" id="image"}
+						<div class="item">
+							<div class="big_title">{$block.intro[$key]['info']}&nbsp;</div>
+							
+							<div class="small_title">{$block.intro[$key]['txt']}</div>
+							</div>
+          {/volist}
+          {/notempty}
+	
+{/cms:blocklist}
+</div>
+</div>
+</div>
+
+<div class="detail_module_2">
+<div class="item_box">
+	{cms:blocklist id="block" name="about-image" orderby="weigh" orderway="desc" } 
+	{notempty name="$block.images"}
+						{volist name="$block.imgs|explode=',',###" id="image"}
+							<div class="item"><img src="{$image}"></div>
+							
+						{/volist}
+						{/notempty}
+		
+	{/cms:blocklist}
+</div>
+</div>
+<style type="text/css">.detail_module_1 { max-width: 1160px; padding-top: 25px; padding-bottom: 50px; margin: 0 auto; }
+.detail_module_1 .h3_title { font-size: 40px; line-height: 40px;}
+.detail_module_1 .con_p { font-size: 14px; line-height: 30px; margin-top: 80px; }
+.detail_module_1 .img_park { margin-top: 55px; display: block; font-size: 0; }
+
+@media screen and (max-width: 768px){
+	.detail_module_1 { padding-top: 10px; padding-bottom: 25px; }
+	.detail_module_1 .h3_title { font-size: 20px; line-height: 27px; }
+	.detail_module_1 .con_p { line-height: 21px; margin-top: 15px; }
+	.detail_module_1 .img_park { margin-top: 24px; }
+}
+</style>
+<style type="text/css">.detail_module_1 { max-width: 1160px; padding-top: 25px; padding-bottom: 50px; margin: 0 auto; }
+.detail_module_1 .h3_title { font-size: 40px; line-height: 40px;}
+.detail_module_1 .con_p { font-size: 14px; line-height: 30px; margin-top: 80px; }
+.detail_module_1 .img_park { margin-top: 55px; display: block; font-size: 0; }
+
+@media screen and (max-width: 768px){
+	.detail_module_1 { padding-top: 10px; padding-bottom: 25px; }
+	.detail_module_1 .h3_title { font-size: 20px; line-height: 27px; }
+	.detail_module_1 .con_p { line-height: 21px; margin-top: 15px; }
+	.detail_module_1 .img_park { margin-top: 24px; }
+}
+</style>
+<style type="text/css">.detail_module_2 { max-width: 1160px; padding-top: 25px; padding-bottom: 50px; margin: 0 auto; }
+.detail_module_2 .h3_title { font-size: 40px; line-height: 60px; font-family:'Opensans-Bold'; text-align: center; }
+.detail_module_2 .con_p { font-size: 16px; line-height: 30px; margin-top: 5px; text-align: center; }
+.detail_module_2 .item_box { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 55px; }
+.detail_module_2 .item_box .item { position: relative; width: 25.863%; padding-top: 16.5444%; margin-right: 5px; }
+.detail_module_2 .item_box .item:last-child { margin-right: 0; }
+.detail_module_2 .item_box .item img { position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto; max-height: 100% !important; }
+@media screen and (max-width: 768px){
+	.detail_module_2 { padding-top: 10px; padding-bottom: 25px; }
+	.detail_module_2 .h3_title { font-size: 20px; line-height: 27px; }
+	.detail_module_2 .con_p { line-height: 21px; margin-top: 15px; }
+	.detail_module_2 .item_box { margin-top: 25px; }
+	.detail_module_2 .item_box .item { width: 550px; padding-top: 52.16%; margin-right: 0 !important; margin-bottom: 15px; }
+	.detail_module_2 .item_box .item:last-child { margin-bottom: 0; }
+}
+</style>
+<style type="text/css">.detail_module_5 { max-width: 1160px; margin: 0 auto; }
+.detail_module_5 .text_content .center_text_title { font-size: 40px; line-height: 60px; color: #3c3f46; text-align: center; }
+.detail_module_5 .text_content .center_con_p { font-size: 16px; line-height: 30px; color: #333333; text-align: center; margin-top: 30px; }
+.detail_module_5 .item_box { display: flex; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
+.detail_module_5 .item_box .item { width: 225px; }
+.detail_module_5 .item_box .item .big_title { font-size: 52px; color: #23519e; display: block; line-height: 52px; }
+.detail_module_5 .item_box .item .small_title { font-size: 17px; color: #666666; line-height: 36px; }
+@media screen and (max-width: 991px){
+	.detail_module_5 .item_box .item { width: 320px; margin-bottom: 20px; }
+}
+@media screen and (max-width: 768px){
+	.detail_module_5 .text_content .center_text_title { font-size: 20px; line-height: 30px; }
+	.detail_module_5 .text_content .center_con_p { font-size: 14px; line-height: 22px; margin-top: 10px; }
+	.detail_module_5 .item_box .item { width: 48%; margin-bottom: 10px; }
+	.detail_module_5 .item_box .item .big_title { line-height: 30px; font-size: 25px; }
+	.detail_module_5 .item_box .item .small_title {font-size: 14px; line-height: 20px; }
+}
+</style>
+</div>
+</div>		</div>
+</div>
+</div>
+
+{include file="common/foot" /}

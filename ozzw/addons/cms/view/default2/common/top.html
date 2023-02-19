@@ -43,6 +43,8 @@ body #products .products_box .p_main .p_item .item_title{font-size:20px;}
 <script type="text/javascript" src="__CDN__/template/default2/js/themes.js?v={$site.version}"></script>
 <script type="text/javascript" src="__CDN__/template/default2/js/user.js?v={$site.version}"></script>
 <script type="text/javascript" src="__CDN__/template/default2/js/main.js?v={$site.version}"></script>
+<script type="text/javascript" src="__CDN__/template/default2/js/jquery.bxslider.js?v={$site.version}"></script>
+<link href="__CDN__/template/default2/css/jquery.bxslider.css?v={$site.version}" rel="stylesheet" type="text/css">
 <link href="__CDN__/template/default2/css/responsive.css?v={$site.version}" rel="stylesheet" type="text/css">
 <link href="__CDN__/template/default2/css/font.css?v={$site.version}" rel="stylesheet" type="text/css">
 <link href="__CDN__/template/default2/css/font_1.css?v={$site.version}" rel="stylesheet" type="text/css">
@@ -186,28 +188,27 @@ $.post('./?do_action=action.currency',{currency:data},function(data){
                 <div class="nav_sec_box">
                   <div class="">
                      <div id="nav_sec_4" class="nav_list">
-                      <dl class="nav_sec_item">
                             {cms:channellist id="son" type="son" condition="1=isnav" typeid="nav['id']" cache="0" row="20"}
+                              <dl class="nav_sec_item">
                               <dt>
                                 <a class="nav_sec_a" href="{$son.url}" title="{$son.name}">{$son.name}<em></em></a>
                               </dt>
-                              {cms:arclist id="navshow" channel="nav['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
-                                <dt><a class="nav_sec_a" href="{$navshow.url}" title="{$navshow.title}">{$navshow.title}</a></dt>
-                              {/cms:arclist}
+                              
+                              <dd class="nav_thd_list">
+                                {cms:arclist id="sonshow" channel="son['id']"  orderby="weigh" orderway="desc" row="20"}
+                                      <div class="nav_thd_item"><a class="nav_sec_a" href="{$sonshow.url}" title="{$sonshow.title}">{$sonshow.title}</a></div>
+                                    {/cms:arclist}
                               {if $son.has_child}
-                                <dd class="nav_thd_list">
                                   {cms:channellist id="sons" condition="1=isnav" type="son" typeid="son['id']" cache="0" }
                                     <div class="nav_thd_item">
                                         <a href="{$sons.url}" title="{$sons.name}">{$sons.name}</a>
                                     </div>
-                                    {cms:arclist id="sonshow" channel="son['id']"  orderby="weigh" orderway="desc" flag="top" row="20"}
-                                      <div class="nav_thd_item"><a class="nav_sec_a" href="{$sonshow.url}" title="{$sonshow.title}">{$sonshow.title}</a></div>
-                                    {/cms:arclist}
+                                    
                                   {/cms:channellist}
-                                </dd>
                               {/if}
+                              </dd>
+                              </dl>
                             {/cms:channellist}
-                          </dl>
                      </div>
                      </div>
                      </div>

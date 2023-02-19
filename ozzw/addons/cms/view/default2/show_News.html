@@ -1,0 +1,45 @@
+{include file="common/top" /}
+{include file="common/mbx" /} 
+<div class="info-detail wrap-module">
+	<div class="wrap">
+		<div class="rightside">
+			<div class="ueeshop_responsive_info_detail ">
+	<h1 class="title">{cms:archives name="title" /}</h1>
+		<div class="ext_mes">
+		<div>Views : {cms:archives name="views" /}</div>
+				<div>Update time : {:date('Y-m-d H:i:s', $__ARCHIVES__.publishtime)}</div>
+	</div>
+        <div class="share">
+<div class="addthis_sharing_toolbox"></div>
+<script type="text/javascript" src="js/addthis_widget.js#pubid=ra-559f74332bfa6ac0" async=""></script></div>
+        <div id="global_editor_contents" class="contents"><p>Time: 21&nbsp;Oct-24&nbsp;Oct&nbsp;2021</p>
+
+<p>{cms:archives name="content" /}</p></div>
+    {cms:prevnext id="prev" type="prev" archives="$__ARCHIVES__.id" channel="$__CHANNEL__.id"}
+        <div class="pro_prev_next info_prev_next clean">
+                <span>Previous : </span>
+                <a href="{$prev.url}" title="{$prev.title}" class="prev">{$prev.title}</a>
+        </div>
+    {/cms:prevnext}
+            
+    {cms:prevnext id="next" type="next" archives="$__ARCHIVES__.id" channel="$__CHANNEL__.id"}
+        <div class="pro_prev_next info_prev_next clean">
+            <span>Next : </span>
+            <a href="{$next.url}" title="{$next.title}" class="next">{$next.title}</a>
+        </div>
+    {/cms:prevnext}
+</div>		
+</div>
+    
+					<div class="rale_news">
+				<div class="news_title">
+					<a href="/News" class="read_btn fr">
+						Read More&nbsp;<span>&gt;&gt;</span>
+					</a>
+					<div class="clear"></div>
+				</div>
+			</div>
+</div>
+{include file="common/foot" /}
+
+	

@@ -20,7 +20,7 @@ class Bootstrap extends Paginator
      * @param string $text
      * @return string
      */
-    protected function getPreviousButton($text = "<i class='ico icon-icon--'></i>")
+    protected function getPreviousButton($text = "<span><font class='page_noclick'><em class='icon_page_prev'></em>&nbsp;</font></span>")
     {
         if ($this->currentPage() <= 1) {
             return $this->getDisabledTextWrapper($text);
@@ -38,7 +38,7 @@ class Bootstrap extends Paginator
      * @param string $text
      * @return string
      */
-    protected function getNextButton($text = "<i class='ico icon-icon---copy'></i>")
+    protected function getNextButton($text = "<span class='page_last'><font class='page_noclick'>&nbsp;<em class='icon_page_next'></em></font></span>")
     {
         if (!$this->hasMore) {
             return $this->getDisabledTextWrapper($text);
@@ -169,11 +169,11 @@ class Bootstrap extends Paginator
                 );
             } else {
                 return sprintf(
-                    '<div class="Pagination_list">%s %s %s %s</div>',
+                    '<div class="Pagination_list">%s %s %s</div>',
                     $this->getPreviousButton(),
                     $this->getLinks(),
                    // $this->getGoPage(),
-                    $this->getAllPage(),
+                    // $this->getAllPage(),
                     $this->getNextButton()
                      
                 );
@@ -195,7 +195,7 @@ class Bootstrap extends Paginator
      */
     protected function getAvailablePageWrapper($url, $page)
     {
-        return '<a href="' . htmlentities($url) . '">' . $page . '</a>';
+        return '<span><a href="' . htmlentities($url) . '">' . $page . '</a></span>';
     }
 
     /**
@@ -217,7 +217,7 @@ class Bootstrap extends Paginator
      */
     protected function getActivePageWrapper($text)
     {
-        return '<span>' . $text . '</span>';
+        return '<span> <font class="page_item_current">' . $text . '</font></span>';
     }
 
     /**

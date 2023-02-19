@@ -7,11 +7,9 @@
               <span>Product</span>
               <i class="ft_icon"></i>
             </li>
-                            <li class="item_content"><a href="https://www.iwownfit.com/collections/dining-room-furniture-7" title="Activity &amp; Voice Watches">Activity &amp; Voice Watches</a></li>
-                            <li class="item_content"><a href="https://www.iwownfit.com/collections/study-furniture-8" title="Outdoor Watches">Outdoor Watches</a></li>
-                            <li class="item_content"><a href="https://www.iwownfit.com/collections/kids-watch" title="4G Kids Watches">4G Kids Watches</a></li>
-                            <li class="item_content"><a href="https://www.iwownfit.com/collections/4g-watch" title="Medical Watches">Medical Watches</a></li>
-                            <li class="item_content"><a href="https://www.iwownfit.com/collections/house-care" title="House Care">House Care</a></li>
+            {cms:channellist id="son" type="son" condition="1=isnav" typeid="44" cache="0" row="20"}
+            <li class="item_content"><a href="{$son.url}" title="{$son.name}">{$son.name}</a></li>
+            {/cms:channellist}
                         </ul>
         </div>
                 <div class="ft_item">
@@ -20,21 +18,18 @@
               <span>About Us</span>
               <i class="ft_icon"></i>
             </li>
-                            <li class="item_content"><a href="/pages/about-us-company-profile" title="Company Profile">Company Profile</a></li>
-                            <li class="item_content"><a href="/pages/contact-us-9" title="Contact Us">Contact Us</a></li>
-                            <li class="item_content"><a href="/pages/qualification" title="Qualification">Qualification</a></li>
+            <li class="item_content"><a href="/Contact-us" title="Contact Us">Contact Us</a></li>
                         </ul>
         </div>
                 <div class="ft_item">
           <ul>
             <li class="item_title">
-              <span>Service &amp; Support</span>
+              <span>News</span>
               <i class="ft_icon"></i>
             </li>
-                            <li class="item_content"><a href="/pages/technology" title="App Download">App Download</a></li>
-                            <li class="item_content"><a href="/pages/faq" title="FAQ">FAQ</a></li>
-                            <li class="item_content"><a href="https://api4.iwown.com/ppm.html" title="Privacy Policy">Privacy Policy</a></li>
-                            <li class="item_content"><a href="/pages/warranty-policy" title="Warranty Policy">Warranty Policy</a></li>
+            {cms:arclist id="new" channel="66" flag="index"  orderby="weigh" orderway="desc" row="20" addon="content"}}
+              <li class="item_content"><a href="{new.url}" title="{$new.title}">{$new.title}</a></li>
+            {/cms:arclist}
                         </ul>
         </div>
               <div class="ft_item">
@@ -43,18 +38,23 @@
             <span>Follow us</span>
             <i class="ft_icon"></i>
           </li>
-          <li class="item_content"><a href="/"></a><div class="share foot_share foot_share_type_1"><a href="/"></a><a href="https://www.facebook.com/Iwownfit-106444052024313/?ref=pages_you_manage" target="_blank" class="foot_share_box Facebook"></a><a href="https://twitter.com/iWOWNfit" target="_blank" class="foot_share_box Twitter"></a><a href="https://www.youtube.com/channel/UCAW3F2QIbqeYgjg5mAcBB5g" target="_blank" class="foot_share_box YouTube"></a></div></li>
+          <li class="item_content">
+            <a href="/"></a><div class="share foot_share foot_share_type_1"><a href="/"></a>
+            {cms:blocklist id="block" name="FollowUs" orderby="weigh" orderway="asc" }
+              <a href="{$block.url}" target="_blank" class="foot_share_box {$block.title}"></a>
+            {/cms:blocklist}
+            </div></li>
         </ul>
       </div>
     </div>
     <div class="clear"></div>
           <div class="footer_bottom_text">
-      <div class="left_text">Copyright ©2009-2021 Shenzhen IWOWN Technology Co. ,Ltd. All Rights Reserved. <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" rel="nofollow">粤ICP备14068344号-4</a></div>
+      <!-- <div class="left_text">Copyright ©2009-2021 Shenzhen IWOWN Technology Co. ,Ltd. All Rights Reserved. <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank" rel="nofollow">粤ICP备14068344号-4</a></div> -->
+      <div class="left_text">{$site.beian}</div>
       <div class="right_text">
-                    <span><a href="/" title="Home">Home</a></span>
-                    <span><a href="/info/" title="News">News</a></span>
-                    <span><a href="/feedback.html" title="Feedback">Feedback</a></span>
-                    <span><a href="/products/" title="Products">Products</a></span>
+        {cms:channellist id="nav1" type="top" cache="0" condition="1=isnav" row="20" orderby="weigh" orderway="desc"}
+          <span><a href="{$nav1.url}" title="{$nav1.name}">{$nav1.name}</a></span>
+        {/cms:channellist}
                 </div>
     </div>
   </div>

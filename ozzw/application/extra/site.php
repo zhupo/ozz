@@ -2,7 +2,7 @@
 
 return array (
   'name' => 'OZz Selection Pty Ltd',
-  'beian' => 'Copyright ©  | OZz Selection Pty Ltd',
+  'beian' => 'Copyright ©2009-2023 Shenzhen IWOWN Technology Co. ,Ltd. All Rights Reserved. 粤ICP备15068355号-5',
   'cdnurl' => '',
   'version' => '2022-11-27 19:53:31',
   'timezone' => 'Asia/Shanghai',
@@ -48,7 +48,7 @@ return array (
   'indexfdc' => '0',
   'indexxm' => '0',
   'footimg' => '',
-  'map' => '',
+  'map' => '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60995564.45003508!2d95.36850704754482!3d-21.077701802043496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2b2bfd076787c5df%3A0x538267a1955b1352!2z5r6z5aSn5Yip5Lqa!5e0!3m2!1szh-CN!2shk!4v1676797610952!5m2!1szh-CN!2shk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
   'tell' => '',
   'emaill' => '',
   'abn' => '',

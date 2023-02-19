@@ -1,0 +1,151 @@
+{include file="common/top" /}
+
+<div class="article-content wrap-module">
+		{include file="common/mbx" /}
+		<div class="wrap menu-in-left">
+			<div class="art-title">Contact Us</div>
+			<div class="contenter">
+				<div class="ueeshop_responsive_article_detail  ">
+		<div id="global_editor_contents" class="contents">
+			<p>&nbsp;</p>
+	<style type="text/css">.detail_module_5 { max-width: 1160px; margin: 0 auto; }
+				.detail_module_5 .text_content .center_text_title { font-size: 40px; line-height: 60px; color: #3c3f46; text-align: center; }
+				.detail_module_5 .text_content .center_con_p { font-size: 16px; line-height: 30px; color: #333333; text-align: center; margin-top: 30px; }
+				.detail_module_5 .item_box { display: flex; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
+				.detail_module_5 .item_box .item { width: 225px; }
+				.detail_module_5 .item_box .item .big_title { font-size: 52px; color: #23519e; display: block; line-height: 52px; }
+				.detail_module_5 .item_box .item .small_title { font-size: 17px; color: #666666; line-height: 36px; }
+				@media screen and (max-width: 991px){
+					.detail_module_5 .item_box .item { width: 320px; margin-bottom: 20px; }
+				}
+				@media screen and (max-width: 768px){
+					.detail_module_5 .text_content .center_text_title { font-size: 20px; line-height: 30px; }
+					.detail_module_5 .text_content .center_con_p { font-size: 14px; line-height: 22px; margin-top: 10px; }
+					.detail_module_5 .item_box .item { width: 48%; margin-bottom: 10px; }
+					.detail_module_5 .item_box .item .big_title { line-height: 30px; font-size: 25px; }
+					.detail_module_5 .item_box .item .small_title {font-size: 14px; line-height: 20px; }
+				}
+	</style>
+	<div class="detail_module_4">
+	<div class="graphic">
+	<div class="text_park">
+	<div><span style="color:#000000;"><span style="font-family:quattrocentosans-regular;"><strong><span style="font-size:22px;">Please feel free to contact us<br>
+	Mutual benefit, cooperation and progress</span></strong></span></span></div>
+	
+	<div class="con_p">
+		{cms:blocklist id="block" name="contact" orderby="weigh" orderway="desc" } 
+			{if $block.title == 'Phone'}
+			<span style="color:#000000;"><strong>{$block.title}：</strong></span><a href="tel: {:str_replace(['<p>','</p>'], '', $block.content)}"><span style="color:#0000FF;">{:str_replace(['<p>','</p>'], '', $block.content)}</span></a><br>
+			{/if}
+			{if $block.title == 'Email'}
+			<span style="color:#000000;"><strong>{$block.title}：</strong></span><a href="mailto: {:str_replace(['<p>','</p>'], '', $block.content)}"><span style="color:#0000FF;">{:str_replace(['<p>','</p>'], '', $block.content)}</span></a><br>
+			{/if}
+		{/cms:blocklist}
+		{cms:blocklist id="block" name="contact" orderby="weigh" orderway="desc" } 
+			{if $block.title != 'Email'}
+			{if $block.title != 'Phone'}
+			<span style="color:#000000;"><strong>{$block.title}：</strong></span><span>{:str_replace(['<p>','</p>'], '', $block.content)}</span><br>
+			{/if}
+			{/if}
+		{/cms:blocklist}
+	</div>
+	</div>
+	
+	<div class="img_park">
+		{notempty name="$site.map"}
+    <div  class="map">
+         {$site.map}
+    </div>
+    {/notempty}
+	</div>
+	</div>
+	</div>
+	
+	<div class="detail_module_5">
+	<div class="text_content">
+	<div class="text_park">
+	<div class="center_text_title">&nbsp;</div>
+	</div>
+	</div>
+	
+	<div class="item_box">
+	<div class="item">
+	<div class="big_title">&nbsp;</div>
+	</div>
+	</div>
+	</div>
+	<style type="text/css">.detail_module_5 { max-width: 1160px; margin: 0 auto; }
+				.detail_module_5 .text_content .center_text_title { font-size: 40px; line-height: 60px; color: #3c3f46; text-align: center; }
+				.detail_module_5 .text_content .center_con_p { font-size: 16px; line-height: 30px; color: #333333; text-align: center; margin-top: 30px; }
+				.detail_module_5 .item_box { display: flex; justify-content: center; flex-wrap: wrap; margin-top: 22px; }
+				.detail_module_5 .item_box .item { width: 225px; }
+				.detail_module_5 .item_box .item .big_title { font-size: 52px; color: #23519e; display: block; line-height: 52px; }
+				.detail_module_5 .item_box .item .small_title { font-size: 17px; color: #666666; line-height: 36px; }
+				@media screen and (max-width: 991px){
+					.detail_module_5 .item_box .item { width: 320px; margin-bottom: 20px; }
+				}
+				@media screen and (max-width: 768px){
+					.detail_module_5 .text_content .center_text_title { font-size: 20px; line-height: 30px; }
+					.detail_module_5 .text_content .center_con_p { font-size: 14px; line-height: 22px; margin-top: 10px; }
+					.detail_module_5 .item_box .item { width: 48%; margin-bottom: 10px; }
+					.detail_module_5 .item_box .item .big_title { line-height: 30px; font-size: 25px; }
+					.detail_module_5 .item_box .item .small_title {font-size: 14px; line-height: 20px; }
+				}
+	</style>
+	<style type="text/css">.detail_module_4 .graphic { max-width: 1160px; margin: 0 auto; }
+				.detail_module_4 .graphic .img_park { width: 46.035%; float: right;}
+				.detail_module_4 .graphic .text_park { width: 50%; margin-top: 20px; float: left;}
+				.detail_module_4 .graphic .text_park .text_title { font-size: 28px; line-height: 40px; }
+				.detail_module_4 .graphic .text_park .con_p { font-size: 14px; line-height: 22px; color: #888888; margin-top: 29px; }
+				@media screen and (max-width: 768px){
+					.detail_module_4 .graphic .img_park { width: 100%; margin-top: 10px; float: unset;}
+					.detail_module_4 .graphic .text_park { width: 100%; margin-top: 12px; float: unset;}
+					.detail_module_4 .graphic .text_park .text_title { font-size: 15px; line-height: 25px; }
+					.detail_module_4 .graphic .text_park .con_p { margin-top: 5px; }
+				}
+	</style>		<div class="share"><!-- Go to www.addthis.com/dashboard to customize your tools -->
+	<div class="addthis_sharing_toolbox"></div>
+	</div>
+		</div>
+		<div class="ueeshop_responsive_article_feedback ">
+		<div class="article_feedback_title">
+			<div class="title">Message</div>
+			<span></span>
+			<div class="txt">If you have any suggestions or question for us.Please contact us.</div>
+		</div>
+		<form method="post" name="feedback1" onsubmit="return $('.formPoint').show();" method="POST" action="/d/customer/post.html">
+			<input type="hidden" name="__diyname__" value="customer">
+			{:token()}
+									<div class="rows input_rows">
+			<label><span>*</span> Company</label>
+			<span><input name="row[company]" type="text" class="input" size="30" maxlength="100" notnull=""></span>
+			<div class="clear"></div>
+		</div>
+										<div class="rows input_rows">
+			<label>Phone</label>
+			<span><input name="row[telephone]" type="text" class="input" size="30" maxlength="20"></span>
+			<div class="clear"></div>
+		</div>
+														<div class="rows input_rows">
+			<label><span>*</span> Email</label>
+			<span><input name="row[email]" type="text" class="input" size="30" maxlength="100" format="Email" notnull=""></span>
+			<div class="clear"></div>
+		</div>
+						<div class="rows textarea_rows">
+			<label><span>*</span> Message</label>
+			<span><textarea name="row[content]" class="form_area contents" notnull=""></textarea></span>
+			<div class="clear"></div>
+		</div>
+	<div class="rows">
+		<label></label>
+		<span><input name="Submit" type="submit" class="form_button" value="Submit"></span>
+		<div class="clear"></div>
+	</div>
+	<input type="hidden" name="Site" value="en">
+	</form>
+	</div></div>		</div>
+		</div>
+	</div> 
+
+
+{include file="common/foot" /} 
